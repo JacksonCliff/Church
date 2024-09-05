@@ -1,0 +1,128 @@
+import React from 'react';
+import {
+    ImageBackground,
+    StyleSheet,
+    Text,
+    View,
+    StatusBar,
+    TouchableOpacity,
+    Dimensions,
+    ScrollView
+} from "react-native";
+import {FontAwesome, FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
+import AppBtn from "../components/General/AppBtn";
+import FilterList from "../components/General/FilterList"
+import {data1} from "../assets/Data/UIData";
+import {COLORS} from "../constants/Colors";
+
+const WIDTH = Dimensions.get("screen").width;
+
+function Home(props) {
+    return (
+        <ScrollView>
+            <View style={styles.container}>
+                <View style={styles.sectionA}>
+                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350}} source={require("./../assets/images/peaceful01.jpeg")}>
+                            <View style={{width:"100%",top:StatusBar.currentHeight + 20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
+                                <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
+                                <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                            </View>
+                            <View style={{position:"absolute",bottom:60,width:"100%",flexDirection:"row",justifyContent:"center"}}>
+                                <TouchableOpacity style={styles.glassButton}>
+                                    <FontAwesome name={"share"} size={20} color={COLORS.white}/>
+                                </TouchableOpacity>
+                                <View style={{width:80}}/>
+                                <TouchableOpacity style={styles.glassButton}>
+                                    <Foundation name={"clipboard-notes"} size={20} color={COLORS.white}/>
+                                </TouchableOpacity>
+
+                            </View>
+                        </ImageBackground>
+                </View>
+
+                <View style={styles.sectionB}>
+
+                    <View style={{flexShrink:1,backgroundColor : COLORS.white,margin : 15,padding:10,borderRadius:20}}>
+                        <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
+                        <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
+                        <AppBtn color={COLORS.btnPrimary}/>
+                    </View>
+
+                    <View style={{flexDirection:"row",justifyContent:"space-between",margin : 15}}>
+
+                        <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
+                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                <FontAwesome5 name={"clipboard-list"} color={COLORS.black} size={30}/>
+                                <Text style={{marginTop:5}}>Quiz</Text>
+                            </View>
+                        </View>
+
+                        <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
+                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                <FontAwesome5 name={"bible"} color={COLORS.black} size={30}/>
+                                <Text style={{marginTop:5}}>Bible</Text>
+                            </View>
+                        </View>
+
+                        <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
+                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                <FontAwesome5 name={"search"} color={COLORS.black} size={30}/>
+                                <Text style={{marginTop:5}}>Search</Text>
+                            </View>
+                        </View>
+
+                    </View>
+                </View>
+
+                <View style={styles.sectionC}>
+                    <View style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
+                        <FontAwesome5 name={"praying-hands"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
+                        <Text style={{marginLeft:10,fontSize : 18,fontWeight:"600"}}>Archived Daily Devotionals</Text>
+                    </View>
+                    <View style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
+                        <FontAwesome5 name={"swatchbook"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
+                        <Text style={{marginLeft:15,fontSize : 18,fontWeight:"600"}}>Select Your Reading Plans</Text>
+                    </View>
+
+                    <View style={{marginTop : 15}}>
+                        <FilterList data={data1} title={"GOD'S WORDS FOR TODAY"}/>
+                    </View>
+                </View>
+
+            </View>
+        </ScrollView>
+
+
+    );
+}
+
+export default Home;
+
+const styles = StyleSheet.create({
+    container : {
+        flex : 1,
+        backgroundColor : "rgb(245,245,245)"
+
+    },
+    sectionA : {
+        width : "100%",
+    },
+    sectionB : {
+        width : "100%",
+        top : -40,
+        borderTopLeftRadius : 20,
+        borderTopRightRadius : 20,
+        backgroundColor : "rgb(245,245,245)",
+    },
+    glassButton : {
+        borderRadius : 50,
+        justifyContent : "center",
+        alignItems : "center",
+        backgroundColor : "rgba(255,255,255,0.3)",
+        width : 35,
+        height : 35
+    },
+    sectionC : {
+        top : -40
+    }
+})

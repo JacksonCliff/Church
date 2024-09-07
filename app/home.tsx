@@ -14,6 +14,8 @@ import AppBtn from "../components/General/AppBtn";
 import FilterList from "../components/General/FilterList"
 import {data1} from "../assets/Data/UIData";
 import {COLORS} from "../constants/Colors";
+import Pulsing from "../components/Animation/Pulsing";
+import Shaking from "../components/Animation/Shaking";
 
 const WIDTH = Dimensions.get("screen").width;
 
@@ -25,7 +27,9 @@ function Home(props) {
                         <ImageBackground imageStyle={"center"} style={{width:"100%",height:350}} source={require("./../assets/images/peaceful01.jpeg")}>
                             <View style={{width:"100%",top:StatusBar.currentHeight + 20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
                                 <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
-                                <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                                <Shaking>
+                                    <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                                </Shaking>
                             </View>
                             <View style={{position:"absolute",bottom:60,width:"100%",flexDirection:"row",justifyContent:"center"}}>
                                 <TouchableOpacity style={styles.glassButton}>
@@ -45,7 +49,9 @@ function Home(props) {
                     <View style={{flexShrink:1,backgroundColor : COLORS.white,margin : 15,padding:10,borderRadius:20}}>
                         <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
                         <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
-                        <AppBtn color={COLORS.btnPrimary}/>
+                        <Pulsing>
+                          <AppBtn color={COLORS.btnPrimary}/>
+                        </Pulsing>
                     </View>
 
                     <View style={{flexDirection:"row",justifyContent:"space-between",margin : 15}}>

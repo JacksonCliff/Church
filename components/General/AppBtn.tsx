@@ -1,11 +1,5 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, TouchableOpacity, View, ViewStyle, Text} from "react-native";
-import Animated, {
-    useSharedValue,
-    withTiming,
-    useAnimatedStyle,
-    withRepeat,
-} from 'react-native-reanimated';
 import {COLORS} from "../../constants/Colors";
 
 
@@ -26,28 +20,9 @@ type SquareStyle = ViewStyle & {
 };
 
 function AppBtn({text = "Start",color = "coral"}) {
-    const scale = useSharedValue(1);
-
-    // Toggle scale between 1 and 2
 
 
-    // Define animated style based on scale value
-    const animatedStyle = useAnimatedStyle(() => {
-        return {
-            transform: [{ scale: scale.value }],
-        };
-    });
-
-    useEffect(() => {
-        scale.value = withRepeat(
-            withTiming(scale.value * 1.05, { duration: 1000 }),
-            -1,
-            true
-        );
-
-    }, []);
     return (
-            <Animated.View style={animatedStyle}>
             <TouchableOpacity style={styles.container}>
                 <View style={[styles.segment1,{backgroundColor:color}]}>
                     <View style={[styles.square,{backgroundColor:color}]}/>
@@ -58,7 +33,6 @@ function AppBtn({text = "Start",color = "coral"}) {
                 </View>
             </TouchableOpacity>
 
-            </Animated.View>
     );
 }
 

@@ -43,7 +43,6 @@ const CardBox : React.FC<CardBoxProps> = ({dotColor,cards = [1,2]}) => {
                             >
 
                             </LinearGradient>
-
                         </View>
                     )
                 })}

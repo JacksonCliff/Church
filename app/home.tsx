@@ -16,7 +16,7 @@ import {data1} from "../assets/Data/UIData";
 import {COLORS} from "../constants/Colors";
 import Pulsing from "../components/Animation/Pulsing";
 import Shaking from "../components/Animation/Shaking";
-
+import {getDailyVerse} from "../API/ThirdPartyApis"
 const WIDTH = Dimensions.get("screen").width;
 
 function Home(props) {
@@ -50,7 +50,7 @@ function Home(props) {
                         <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
                         <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
                         <Pulsing>
-                          <AppBtn color={COLORS.btnPrimary}/>
+                          <AppBtn onPress={getDailyVerse} color={COLORS.btnPrimary}/>
                         </Pulsing>
                     </View>
 

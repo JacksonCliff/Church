@@ -19,11 +19,11 @@ type SquareStyle = ViewStyle & {
     transform?: TransformStyle[];
 };
 
-function AppBtn({text = "Start",color = "coral"}) {
+function AppBtn({text = "Start",color = "coral",onPress}) {
 
 
     return (
-            <TouchableOpacity style={styles.container}>
+            <TouchableOpacity onPress={onPress} style={styles.container}>
                 <View style={[styles.segment1,{backgroundColor:color}]}>
                     <View style={[styles.square,{backgroundColor:color}]}/>
                     <View style={[styles.square,{backgroundColor:color}]}/>

@@ -11,6 +11,7 @@ const homeSlice = createSlice({
     initialState,
     reducers: {
         updateDailyVerse : (state,action) => {
+            console.log(state,action,"STATE AND ACTION")
             state.value = action.payload
         }
     },

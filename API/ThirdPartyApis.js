@@ -10,5 +10,5 @@ const configs = {
 
 
 export const getDailyVerse = () => {
-    axios.get(DAILY_VERSE,configs).then(res => console.log(res.data.verse.details.text," <====== Daily Verse"))
+    return axios.get(DAILY_VERSE,configs).then(response => response.data.verse.details.text)
 }

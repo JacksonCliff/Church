@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
     ImageBackground,
     StyleSheet,
@@ -18,10 +18,22 @@ import Pulsing from "../components/Animation/Pulsing";
 import Shaking from "../components/Animation/Shaking";
 import {getDailyVerse} from "../API/ThirdPartyApis"
 import { useSelector, useDispatch } from 'react-redux';
+import {updateDailyVerse} from "../Redux/Slices/HomeSlice";
+
 const WIDTH = Dimensions.get("screen").width;
 
+
 function Home(props) {
-    const count = useSelector((state) => state.counter.value);
+    const dailyVerse = useSelector((state) => state.counter.value);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        // getDailyVerse().then(verse => {
+        //     dispatch(updateDailyVerse(verse));
+        // })
+
+    },[])
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -33,6 +45,7 @@ function Home(props) {
                                     <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
                                 </Shaking>
                             </View>
+                            <Text style={{color:"white",fontSize:30,top:100,left:20}}>{dailyVerse}</Text>
                             <View style={{position:"absolute",bottom:60,width:"100%",flexDirection:"row",justifyContent:"center"}}>
                                 <TouchableOpacity style={styles.glassButton}>
                                     <FontAwesome name={"share"} size={20} color={COLORS.white}/>
@@ -52,7 +65,7 @@ function Home(props) {
                         <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
                         <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
                         <Pulsing>
-                          <AppBtn onPress={getDailyVerse} color={COLORS.btnPrimary}/>
+                          <AppBtn color={COLORS.btnPrimary}/>
                         </Pulsing>
                     </View>
 

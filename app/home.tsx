@@ -17,9 +17,11 @@ import {COLORS} from "../constants/Colors";
 import Pulsing from "../components/Animation/Pulsing";
 import Shaking from "../components/Animation/Shaking";
 import {getDailyVerse} from "../API/ThirdPartyApis"
+import { useSelector, useDispatch } from 'react-redux';
 const WIDTH = Dimensions.get("screen").width;
 
 function Home(props) {
+    const count = useSelector((state) => state.counter.value);
     return (
         <ScrollView>
             <View style={styles.container}>

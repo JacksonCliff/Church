@@ -10,5 +10,8 @@ const configs = {
 
 
 export const getDailyVerse = () => {
-    return axios.get(DAILY_VERSE,configs).then(response => response.data.verse.details.text)
+    console.log("<======= API GETTING CALLED")
+    return axios.get(DAILY_VERSE,configs).then(response => {
+        return (response.data.verse.details.text)
+    })
 }

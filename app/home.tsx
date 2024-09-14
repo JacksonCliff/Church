@@ -20,7 +20,6 @@ import {getDailyVerse} from "../API/ThirdPartyApis"
 import { useSelector, useDispatch } from 'react-redux';
 import {updateDailyVerse} from "../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../LocalStorage/AsyncStorageFns'
-import AsyncStorage from "@react-native-async-storage/async-storage";
 const WIDTH = Dimensions.get("screen").width;
 
 

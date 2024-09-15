@@ -20,6 +20,7 @@ import {getDailyVerse} from "../API/ThirdPartyApis"
 import { useSelector, useDispatch } from 'react-redux';
 import {updateDailyVerse} from "../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../LocalStorage/AsyncStorageFns'
+import AsyncStorage from "@react-native-async-storage/async-storage";
 const WIDTH = Dimensions.get("screen").width;
 
 
@@ -35,15 +36,19 @@ function Home(props) {
         <ScrollView>
             <View style={styles.container}>
                 <View style={styles.sectionA}>
-                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350}} source={require("./../assets/images/peaceful01.jpeg")}>
-                            <View style={{width:"100%",top:StatusBar.currentHeight + 20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
+                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("./../assets/images/peaceful01.jpeg")}>
+                            <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
                                 <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
                                 <Shaking>
                                     <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
                                 </Shaking>
                             </View>
-                            <Text style={{color:"white",fontSize:20,top:StatusBar.currentHeight+ 60,marginHorizontal:5,textAlign:"center"}}>{dailyVerse}</Text>
-                            <View style={{position:"absolute",bottom:60,width:"100%",flexDirection:"row",justifyContent:"center"}}>
+                            <View style={{justifyContent:"center",height:"70%"}}>
+                                <Text numberOfLines={4} style={{color:"white",fontSize:20,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.value}</Text>
+                                <Text style={{color:"white",fontSize:14,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.reference}</Text>
+
+                            </View>
+                          <View style={{position:"absolute",bottom:40,width:"100%",flexDirection:"row",justifyContent:"center"}}>
                                 <TouchableOpacity style={styles.glassButton}>
                                     <FontAwesome name={"share"} size={20} color={COLORS.white}/>
                                 </TouchableOpacity>
@@ -119,15 +124,15 @@ export default Home;
 const styles = StyleSheet.create({
     container : {
         flex : 1,
-        backgroundColor : "rgb(245,245,245)"
+        backgroundColor : "rgb(245,245,245)",
 
     },
     sectionA : {
-        width : "100%",
+        width : "100%"
     },
     sectionB : {
         width : "100%",
-        top : -40,
+        top : -20,
         borderTopLeftRadius : 20,
         borderTopRightRadius : 20,
         backgroundColor : "rgb(245,245,245)",
@@ -141,6 +146,6 @@ const styles = StyleSheet.create({
         height : 35
     },
     sectionC : {
-        top : -40
+        top : -20
     }
 })

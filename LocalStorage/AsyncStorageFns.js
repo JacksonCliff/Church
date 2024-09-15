@@ -11,13 +11,15 @@ export const checkAndUpdateDailyVerse = async (globalize) => {
 
         let dailyVerse;
         if(data && data.storedDate === todayDate){
-            dailyVerse = data.value;
+            dailyVerse = data;
         }else{
             dailyVerse = await getDailyVerse();
             const newData = {
-                value: dailyVerse,
+                value: dailyVerse.text,
                 storedDate: todayDate,
+                reference: dailyVerse.reference
             };
+            dailyVerse = newData;
             await AsyncStorage.setItem("@DailyVerse",JSON.stringify(newData))
         }
         globalize(dailyVerse)

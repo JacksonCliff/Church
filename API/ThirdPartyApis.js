@@ -8,10 +8,13 @@ const configs = {
     }
 }
 
-
-export const getDailyVerse = () => {
+export const getDailyVerse = async () => {
     console.log("<======= API GETTING CALLED")
-    return axios.get(DAILY_VERSE,configs).then(response => {
-        return (response.data.verse.details.text)
-    })
+    try{
+        const response = await axios.get(DAILY_VERSE,configs);
+        return response.data.verse.details.text;
+    }catch (error) {
+        console.error("Error fetching the daily verse:", error);
+        throw error;
+    }
 }

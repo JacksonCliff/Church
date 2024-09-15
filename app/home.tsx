@@ -42,7 +42,7 @@ function Home(props) {
                                     <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
                                 </Shaking>
                             </View>
-                            <Text style={{color:"white",fontSize:30,top:100,left:20}}>{dailyVerse}</Text>
+                            <Text style={{color:"white",fontSize:20,top:StatusBar.currentHeight+ 60,marginHorizontal:5,textAlign:"center"}}>{dailyVerse}</Text>
                             <View style={{position:"absolute",bottom:60,width:"100%",flexDirection:"row",justifyContent:"center"}}>
                                 <TouchableOpacity style={styles.glassButton}>
                                     <FontAwesome name={"share"} size={20} color={COLORS.white}/>

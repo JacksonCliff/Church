@@ -4,22 +4,24 @@ import {getDailyVerse} from "../API/ThirdPartyApis";
 
 
 export const checkAndUpdateDailyVerse = async (globalize) => {
-    const data = JSON.parse(await AsyncStorage.getItem("@DailyVerse"));
-    const todayDate = moment().format("DDMMYYYY")
-    if(data){
-          if(data.storedDate !== todayDate){
-              data.value = await getDailyVerse();
-              data.storedDate = todayDate;
-              await AsyncStorage.setItem("@DailyVerse",JSON.stringify(data))
-              globalize(data.value)
-          }
-          globalize(data.value)
-    }else{
-        const value = await getDailyVerse();
-        await AsyncStorage.setItem("@DailyVerse",JSON.stringify({
-            value,
-            storedDate : todayDate
-        }))
-        globalize(value)
+    try{
+        const storedData = await AsyncStorage.getItem("@DailyVerse");
+        const data = storedData ? JSON.parse(storedData) : null;
+        const todayDate = moment().format("DDMMYYYY");
+
+        let dailyVerse;
+        if(data && data.storedDate === todayDate){
+            dailyVerse = data.value;
+        }else{
+            dailyVerse = await getDailyVerse();
+            const newData = {
+                value: dailyVerse,
+                storedDate: todayDate,
+            };
+            await AsyncStorage.setItem("@DailyVerse",JSON.stringify(newData))
+        }
+        globalize(dailyVerse)
+    } catch (error) {
+        console.error("Error in checkAndUpdateDailyVerse:", error);
     }
 }

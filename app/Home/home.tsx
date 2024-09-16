@@ -10,16 +10,16 @@ import {
     ScrollView
 } from "react-native";
 import {FontAwesome, FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
-import AppBtn from "../components/General/AppBtn";
-import FilterList from "../components/General/FilterList"
-import {data1} from "../assets/Data/UIData";
-import {COLORS} from "../constants/Colors";
-import Pulsing from "../components/Animation/Pulsing";
-import Shaking from "../components/Animation/Shaking";
-import {getDailyVerse} from "../API/ThirdPartyApis"
+import AppBtn from "../../components/General/AppBtn";
+import FilterList from "../../components/General/FilterList"
+import {data1} from "../../assets/Data/UIData";
+import {COLORS} from "../../constants/Colors";
+import Pulsing from "../../components/Animation/Pulsing";
+import Shaking from "../../components/Animation/Shaking";
+import {getDailyVerse} from "../../API/ThirdPartyApis"
 import { useSelector, useDispatch } from 'react-redux';
-import {updateDailyVerse} from "../Redux/Slices/HomeSlice";
-import {checkAndUpdateDailyVerse} from '../LocalStorage/AsyncStorageFns'
+import {updateDailyVerse} from "../../Redux/Slices/HomeSlice";
+import {checkAndUpdateDailyVerse} from '../../LocalStorage/AsyncStorageFns'
 import AsyncStorage from "@react-native-async-storage/async-storage";
 const WIDTH = Dimensions.get("screen").width;
 
@@ -36,7 +36,7 @@ function Home(props) {
         <ScrollView>
             <View style={styles.container}>
                 <View style={styles.sectionA}>
-                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("./../assets/images/peaceful01.jpeg")}>
+                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("../../assets/images/peaceful01.jpeg")}>
                             <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
                                 <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
                                 <Shaking>

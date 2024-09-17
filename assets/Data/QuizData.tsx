@@ -1,7 +1,7 @@
 //Link for these quizs
 //https://ministry-to-children.com/wp-content/uploads/2009/09/Bible-Trivia-Questions-and-Answers.pdf
 
-const quizAboutBible = [
+export const quizAboutBible = [
     {
         id: 1,
         question: "What is the first book in the Bible?",
@@ -104,7 +104,7 @@ const quizAboutBible = [
     }
 ];
 
-const quizAboutGenesis = [
+export const quizAboutGenesis = [
     { id: 1, question: "How many days did God take to create the world?", answer: "6" },
     { id: 2, question: "What day did God create man?", answer: "6th" },
     { id: 3, question: "Who was the first man?", answer: "Adam" },
@@ -165,7 +165,7 @@ const quizAboutGenesis = [
     { id: 58, question: "What did Joseph tell his brothers to do when they returned to Canaan?", answer: "Bring their families and their father to Egypt." }
 ];
 
-const quizAboutExodus = [
+export const quizAboutExodus = [
     { id: 1, question: "How did Moses’ mother save him from the Egyptian soldiers?", answer: "Put him in a basket in the river." },
     { id: 2, question: "What did Moses do after he killed an Egyptian?", answer: "Ran away into the desert." },
     { id: 3, question: "Through what did God speak to Moses in the desert?", answer: "A burning bush" },
@@ -191,7 +191,7 @@ const quizAboutExodus = [
     { id: 23, question: "How did Samson die?", answer: "Pushing over the temple pillars, killing himself and many Philistines." }
 ];
 
-const quizAboutEarlyKingdom = [
+export const quizAboutEarlyKingdom = [
     { id: 1, question: "Who was the first king of Israel?", answer: "Saul" },
     { id: 2, question: "Who anointed him king?", answer: "Samuel" },
     { id: 3, question: "Who was the enemy who took the Ark of the Covenant?", answer: "Philistines" },
@@ -221,7 +221,7 @@ const quizAboutEarlyKingdom = [
     { id: 27, question: "How many of his sons died in the same battle?", answer: "All of them" }
 ];
 
-const quizAboutJesus = [
+export const quizAboutJesus = [
     { id: 1, question: "Who was Jesus' human mother?", answer: "Mary" },
     { id: 2, question: "Who was Jesus’ adoptive father on Earth?", answer: "Joseph" },
     { id: 3, question: "Who was Jesus’ birth father?", answer: "God the Holy Spirit – see Matt 1:20" },
@@ -289,7 +289,7 @@ const quizAboutJesus = [
     { id: 65, question: "How many people saw Jesus after he came back from the dead?", answer: "More than 500 – see 1 Cor 15:3–8" }
 ];
 
-const quizAboutLordPrayer = [
+export const quizAboutLordPrayer = [
     { id: 1, question: "Where in the Bible can you find the Lord’s Prayer?", answer: "Matthew 6" },
     { id: 2, question: "Who taught the Lord’s Prayer?", answer: "Jesus" },
     { id: 3, question: "How many requests are in the Lord’s Prayer?", answer: "Seven" },

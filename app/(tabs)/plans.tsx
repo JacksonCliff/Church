@@ -2,12 +2,12 @@ import DateTimePicker from 'react-native-ui-datepicker';
 import dayjs from 'dayjs';
 import {useState,useEffect} from "react";
 import {View, StyleSheet, Image, ScrollView} from "react-native";
-import {Collapsible} from "../components/Collapsible";
-import ImageCard from "../components/Decoration/ImageCard";
-import {Colors} from "../constants/Colors";
+import {Collapsible} from "../../components/Collapsible";
+import ImageCard from "../../components/Decoration/ImageCard";
+import {Colors} from "../../constants/Colors";
 import moment from "moment";
 import DotTextRow from "../components/Text/DotTextRow";
-import CardBox from "../components/General/CardBox";
+import CardBox from "../../components/General/CardBox";
 import Animated, {
     useSharedValue,
     withTiming,
@@ -41,7 +41,7 @@ export default function Plans() {
     return (
         <View style={styles.container}>
             <Animated.View style={animatedStyles}>
-            <ImageCard imageSrc={require("../assets/images/HomeBgCard.jpg")}/>
+            <ImageCard imageSrc={require("../../assets/images/HomeBgCard.jpg")}/>
             </Animated.View>
             <ScrollView onScroll={(item) => {
                 reduceImageOpacity(item,imageAnimation)

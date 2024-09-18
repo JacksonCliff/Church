@@ -1,14 +1,9 @@
-import { Tabs } from "expo-router";
-import { Provider } from 'react-redux';
-import {store} from '../Redux/Store/store'
-export default function RootLayout() {
-  return (
-      <Provider store={store}>
-        <Tabs screenOptions={{headerShown:false}}>
-          <Tabs.Screen name="home" />
-          <Tabs.Screen name="plans" />
-          <Tabs.Screen name="settings" />
-        </Tabs>
-      </Provider>
-  );
+import { Stack } from 'expo-router/stack';
+
+export default function Layout() {
+    return (
+        <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+    );
 }

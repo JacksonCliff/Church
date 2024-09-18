@@ -21,10 +21,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import {updateDailyVerse} from "../../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../../LocalStorage/AsyncStorageFns'
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import {Link} from "expo-router";
 const WIDTH = Dimensions.get("screen").width;
 
 
-function Home(props) {
+function Index(props) {
     const dailyVerse = useSelector((state) => state.counter.value);
     const dispatch = useDispatch();
 
@@ -36,29 +37,29 @@ function Home(props) {
         <ScrollView>
             <View style={styles.container}>
                 <View style={styles.sectionA}>
-                        <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("../../assets/images/peaceful01.jpeg")}>
-                            <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
-                                <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
-                                <Shaking>
-                                    <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
-                                </Shaking>
-                            </View>
-                            <View style={{justifyContent:"center",height:"70%"}}>
-                                <Text numberOfLines={4} style={{color:"white",fontSize:20,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.value}</Text>
-                                <Text style={{color:"white",fontSize:14,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.reference}</Text>
+                    <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("../../assets/images/peaceful01.jpeg")}>
+                        <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
+                            <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
+                            <Shaking>
+                                <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                            </Shaking>
+                        </View>
+                        <View style={{justifyContent:"center",height:"70%"}}>
+                            <Text numberOfLines={4} style={{color:"white",fontSize:20,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.value}</Text>
+                            <Text style={{color:"white",fontSize:14,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.reference}</Text>
 
-                            </View>
-                          <View style={{position:"absolute",bottom:40,width:"100%",flexDirection:"row",justifyContent:"center"}}>
-                                <TouchableOpacity style={styles.glassButton}>
-                                    <FontAwesome name={"share"} size={20} color={COLORS.white}/>
-                                </TouchableOpacity>
-                                <View style={{width:80}}/>
-                                <TouchableOpacity style={styles.glassButton}>
-                                    <Foundation name={"clipboard-notes"} size={20} color={COLORS.white}/>
-                                </TouchableOpacity>
+                        </View>
+                        <View style={{position:"absolute",bottom:40,width:"100%",flexDirection:"row",justifyContent:"center"}}>
+                            <TouchableOpacity style={styles.glassButton}>
+                                <FontAwesome name={"share"} size={20} color={COLORS.white}/>
+                            </TouchableOpacity>
+                            <View style={{width:80}}/>
+                            <TouchableOpacity style={styles.glassButton}>
+                                <Foundation name={"clipboard-notes"} size={20} color={COLORS.white}/>
+                            </TouchableOpacity>
 
-                            </View>
-                        </ImageBackground>
+                        </View>
+                    </ImageBackground>
                 </View>
 
                 <View style={styles.sectionB}>
@@ -67,7 +68,9 @@ function Home(props) {
                         <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
                         <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
                         <Pulsing>
-                          <AppBtn color={COLORS.btnPrimary}/>
+                            <Link href={'/plans'} asChild>
+                                <TouchableOpacity style={{width:50,height:50,backgroundColor:"red"}}></TouchableOpacity>
+                            </Link>
                         </Pulsing>
                     </View>
 
@@ -119,7 +122,7 @@ function Home(props) {
     );
 }
 
-export default Home;
+export default Index;
 
 const styles = StyleSheet.create({
     container : {

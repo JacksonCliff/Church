@@ -22,6 +22,7 @@ import {updateDailyVerse} from "../../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../../LocalStorage/AsyncStorageFns'
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {Link} from "expo-router";
+
 const WIDTH = Dimensions.get("screen").width;
 
 
@@ -68,8 +69,8 @@ function Index(props) {
                         <Text style={{fontSize :20,fontWeight : "600",marginHorizontal : 10}}>Morning Pray</Text>
                         <Text style={{fontSize : 15,color : COLORS.dark08,marginHorizontal:10,marginBottom:20,marginTop:5}}>Start Your Day With This Verse</Text>
                         <Pulsing>
-                            <Link href={'/plans'} asChild>
-                                <TouchableOpacity style={{width:50,height:50,backgroundColor:"red"}}></TouchableOpacity>
+                            <Link href={'../prayer'} asChild>
+                                <AppBtn color={COLORS.btnPrimary}/>
                             </Link>
                         </Pulsing>
                     </View>

@@ -285,25 +285,29 @@ const loveVerses = [
         id : 1,
         verse : "He administers justice for the fatherless and the widow, and loves the stranger, giving him food and clothing.",
         reference : "Deuteronomy 10:18",
-        meditation : ""
+        meditation : "This verse shows that God sees and cares for those who are hurting, lost, or struggling. Just like He cares for the orphan, widow, and stranger, He cares for you. He is actively working to protect, provide, and surround you with His love, even in difficult times.God’s love for you is unwavering. Just as He takes care of the most vulnerable, He is right there with you, offering His protection, justice, and provision. You are never outside of His care, and He won’t leave you in your time of need.",
+        prayer : "Lord, we thank You for Your deep compassion for those who are hurting. Just as You care for the orphan and the widow, we ask that You surround us with Your love and protection right now. Provide for their needs, Lord, and remind them that You are a God of justice, who never forgets Your children. Amen."
     },
     {
         id : 2,
         verse : "How precious is Your lovingkindness, O God! Therefore the children of men put their trust under the shadow of Your wings.",
         reference : "Psalm 36:7",
-        meditation : ""
+        meditation : "God’s love for you is precious, and just like a mother bird protects her young under her wings, God shelters you from harm. No matter what you’re going through, His arms are open to hold and protect you. You can find peace and safety in His care.",
+        prayer : "Lord, we thank You for Your precious love and protection. Please wrap us in the shelter of Your wings right now, giving them peace, strength, and reassurance. Remind them of Your constant presence and help them trust in Your loving care. Amen."
     },
     {
         id : 3,
         verse : "Because Your lovingkindness is better than life, my lips shall praise You.",
         reference : "Psalm 63:3",
-        meditation : ""
+        meditation : "God’s lovingkindness is greater than life itself—it’s better than any challenge we face, any fear we might have. His love is constant, unchanging, and stronger than whatever you're going through. In His love, you can find peace and security.Even when life feels overwhelming, remembering God’s incredible love for you can shift your heart. As the psalmist says, ‘My lips shall praise You’—sometimes praising God in the storm helps us remember that His love is greater than any challenge we face.",
+        prayer : "Lord, we thank You for Your lovingkindness that is better than life itself. I pray that we feels surrounded by Your love and that they find comfort knowing You are always with them. Help them to rest in the assurance of Your presence, knowing You are protecting and guiding them. Amen."
     },
     {
         id : 4,
         verse : "As a father pities his children, so the LORD pities those who fear Him. For He knows our frame; He remembers that we are dust.",
         reference : "Psalm 103:13-14",
-        meditation : ""
+        meditation : "God knows how fragile we are—He knows our weaknesses and struggles, and He doesn’t expect us to be perfect. Like a loving father who is gentle with his children, God sees your pain and offers His compassion and protection.God’s compassion never fails. He knows exactly how you’re feeling, and He’s not distant or indifferent—He’s right there with you, offering His understanding, comfort, and protection. You can lean on Him, knowing He’ll always treat you with the gentleness of a loving Father.",
+        prayer : "Lord, we thank You that You are a compassionate Father, who knows our weaknesses and loves us through them. I ask that You wrap [Name] in Your loving arms right now, showing them Your kindness and protection. Help them to feel Your mercy and trust that You understand their every need. Amen."
     },
     {
         id : 5,

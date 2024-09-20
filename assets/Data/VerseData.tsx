@@ -1,7 +1,9 @@
 //Source
 //https://lifehopeandtruth.com/bible/bible-study/encouraging-bible-verses/
-//ChatgpT How can this verse be applied to a Christian's life today when facing difficult situations?
+//ChatgpT prompts used to generate data
+// How can this verse be applied to a Christian's life today when facing difficult situations?
 // Explain this verse in a single passage and make it empathetic
+// How can I comfort someone who needs to be reminded of God's protection and help?
 
 const comfortVerses = [
     {
@@ -127,60 +129,284 @@ const comfortVerses = [
     {
         id : 21,
         verse : "Now may our Lord Jesus Christ Himself, and our God and Father, who has loved us and given us everlasting consolation and good hope by grace, comfort your hearts and establish you in every good word and work.",
-        meditation : "",
+        meditation : " Jesus Christ and God the Father, in their boundless love, offer us eternal comfort and hope, not because we deserve it, but because of their grace. It reassures us that, no matter what we face, God is there to bring peace to our hearts and guide us in all that we do. The message is one of deep care and encouragement, urging us to trust in God's love as a steady source of strength, so that we may continue to speak and act in ways that reflect His goodness.",
         reference : "2 Thessalonians 2:16-17",
     }
 
 ]
 
 const helpVerses = [
-    { id: 1, verse: "God is our refuge and strength, a very present help in trouble.", reference: "Psalm 46:1" , meditation : ""},
-    { id: 2, verse: "God sets the solitary in families; He brings out those who are bound into prosperity; but the rebellious dwell in a dry land.", reference: "Psalm 68:6" , meditation : ""},
-    { id: 3, verse: "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He shall direct your paths.", reference: "Proverbs 3:5-6" , meditation : ""},
-    { id: 4, verse: "Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.", reference: "Matthew 7:7" , meditation : ""},
-    { id: 5, verse: "For we do not have a High Priest who cannot sympathize with our weaknesses, but was in all points tempted as we are, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.", reference: "Hebrews 4:15-16" , meditation : ""},
-    { id: 6, verse: "Let your conduct be without covetousness; be content with such things as you have. For He Himself has said, 'I will never leave you nor forsake you.' So we may boldly say: 'The LORD is my helper; I will not fear. What can man do to me?'", reference: "Hebrews 13:5-6" , meditation : ""},
-    { id: 7, verse: "There is no one like the God of Jeshurun, who rides the heavens to help you, and in His excellency on the clouds.", reference: "Deuteronomy 33:26" , meditation : ""},
-    { id: 8, verse: "And Jabez called on the God of Israel saying, 'Oh, that You would bless me indeed, and enlarge my territory, that Your hand would be with me, and that You would keep me from evil, that I may not cause pain!' So God granted him what he requested.", reference: "1 Chronicles 4:10" , meditation : ""},
-    { id: 9, verse: "And Asa cried out to the LORD his God, and said, 'LORD, it is nothing for You to help, whether with many or with those who have no power; help us, O LORD our God, for we rest on You, and in Your name we go against this multitude. O LORD, You are our God; do not let man prevail against You!'", reference: "2 Chronicles 14:11" , meditation : ""},
-    { id: 10, verse: "But You have seen, for You observe trouble and grief, to repay it by Your hand. The helpless commits himself to You; You are the helper of the fatherless.", reference: "Psalm 10:14" , meditation : ""},
-    { id: 11, verse: "Do not hide Your face from me; do not turn Your servant away in anger; You have been my help; do not leave me nor forsake me, O God of my salvation.", reference: "Psalm 27:9" , meditation : ""},
-    { id: 12, verse: "And the LORD shall help them and deliver them; He shall deliver them from the wicked, and save them, because they trust in Him.", reference: "Psalm 37:40" , meditation : ""},
-    { id: 13, verse: "But I am poor and needy; yet the LORD thinks upon me. You are my help and my deliverer; do not delay, O my God.", reference: "Psalm 40:17" , meditation : ""},
-    { id: 14, verse: "Give us help from trouble, for the help of man is useless.", reference: "Psalm 60:11" , meditation : ""},
-    { id: 15, verse: "Because You have been my help, therefore in the shadow of Your wings I will rejoice.", reference: "Psalm 63:7" , meditation : ""},
-    { id: 16, verse: "For He will deliver the needy when he cries, the poor also, and him who has no helper.", reference: "Psalm 72:12" , meditation : ""},
-    { id: 17, verse: "You who fear the LORD, trust in the LORD; He is their help and their shield.", reference: "Psalm 115:11" , meditation : ""},
-    { id: 18, verse: "My help comes from the LORD, who made heaven and earth.", reference: "Psalm 121:2" , meditation : ""},
-    { id: 19, verse: "Happy is he who has the God of Jacob for his help, whose hope is in the LORD his God.", reference: "Psalm 146:5" , meditation : ""},
-    { id: 20, verse: "Fear not, for I am with you; be not dismayed, for I am your God. I will strengthen you, yes, I will help you, I will uphold you with My righteous right hand.", reference: "Isaiah 41:10" , meditation : ""},
-    { id: 21, verse: "For I, the LORD your God, will hold your right hand, saying to you, 'Fear not, I will help you.'", reference: "Isaiah 41:13" , meditation : ""},
-    { id: 22, verse: "Immediately the father of the child cried out and said with tears, 'Lord, I believe; help my unbelief!'", reference: "Mark 9:24" , meditation : ""},
-    { id: 23, verse: "But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things, and bring to your remembrance all things that I said to you.", reference: "John 14:26" , meditation : ""}
+    {
+        id: 1,
+        verse: "God is our refuge and strength, a very present help in trouble.",
+        reference: "Psalm 46:1",
+        meditation: "In moments of fear, uncertainty, or hardship, God is like a safe shelter we can run to. He is not distant, but close by, offering strength and support right when we need it most. No matter how overwhelming life may feel, God is always there—steady, protective, and ready to help us through whatever we are facing. It’s a message of comfort, letting us know that we are never alone in our struggles."
+    },
+    {
+        id: 2,
+        verse: "God sets the solitary in families; He brings out those who are bound into prosperity; but the rebellious dwell in a dry land.",
+        reference: "Psalm 68:6",
+        meditation: "God places the lonely into the warmth of community and family, giving them a sense of belonging. For those who feel bound by hardship, He leads them toward freedom and better days. However, it also gently warns that those who turn away from love and grace may find themselves in a barren, unfulfilled place. It's a message of hope, showing how God longs to bring everyone into a place of love, care, and abundance, but it also calls us to remain open to His guidance."
+    },
+    {
+        id: 3,
+        verse: "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He shall direct your paths.",
+        reference: "Proverbs 3:5-6",
+        meditation: "This verse invites us to let go of the pressure to figure everything out on our own. It’s a call to trust God completely, even when life feels uncertain or confusing. Instead of relying solely on our limited understanding, we are encouraged to acknowledge God in every part of our lives. When we do this, we’re reassured that He will guide us on the right path, leading us with love and wisdom. It’s a comforting reminder that we don’t have to carry the weight of every decision alone—God is there to help us every step of the way."
+    },
+    {
+        id: 4,
+        verse: "Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.",
+        reference: "Matthew 7:7",
+        meditation: "When we reach out to God with our needs, desires, or questions, He listens. If we ask, He will respond; if we seek, He will help us find what we’re searching for; and if we knock, He will open doors of opportunity and understanding. It’s an encouraging message that God is approachable and eager to provide for us, as long as we come to Him with trust. It assures us that we are never ignored or forgotten—God is always ready to answer when we reach out."
+    },
+    {
+        id: 5,
+        verse: "For we do not have a High Priest who cannot sympathize with our weaknesses, but was in all points tempted as we are, yet without sin. Let us therefore come boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need.",
+        reference: "Hebrews 4:15-16",
+        meditation: "Jesus, our High Priest, fully understands our struggles. He isn’t distant or unaware of our human weaknesses—He experienced temptation and hardship just as we do, yet He remained without sin. Because of this, we can approach God with confidence, knowing that we will be met with compassion, mercy, and grace. It reassures us that in our moments of need, we don’t have to hesitate or feel unworthy. God is ready to meet us with love, offering the strength and help we need to get through anything we face."
+    },
+    {
+        id: 6,
+        verse: "Let your conduct be without covetousness; be content with such things as you have. For He Himself has said, 'I will never leave you nor forsake you.' So we may boldly say: 'The LORD is my helper; I will not fear. What can man do to me?'",
+        reference: "Hebrews 13:5-6",
+        meditation: "Live with a heart free from envy, finding contentment in what we already have. It reminds us that true security doesn’t come from material things but from God’s unwavering presence. God promises that He will never leave or abandon us, giving us the courage to face life without fear. With God as our helper, we can feel safe and confident, knowing that no human challenge or threat can ever take away the peace and protection He provides. It’s a message of reassurance, letting us know that we are never alone and can trust in God’s constant care."
+    },
+    {
+        id: 7,
+        verse: "There is no one like the God of Jeshurun, who rides the heavens to help you, and in His excellency on the clouds.",
+        reference: "Deuteronomy 33:26",
+        meditation: "There is no one like God, who moves with power and majesty, riding the heavens to come to our aid. He is not distant or unreachable—He is actively watching over us from above, ready to step in with His strength when we need Him. The imagery of God on the clouds speaks to His divine authority and the tender care He provides for His people. It’s a comforting reminder that no matter how vast the universe is, God is personally invested in helping and protecting us."
+    },
+    {
+        id: 8,
+        verse: "And Jabez called on the God of Israel saying, 'Oh, that You would bless me indeed, and enlarge my territory, that Your hand would be with me, and that You would keep me from evil, that I may not cause pain!' So God granted him what he requested.",
+        reference: "1 Chronicles 4:10",
+        meditation: "Jabez, who humbly calls on God for blessings and guidance,asks not only for growth and opportunity in his life but also for God's constant presence and protection. Jabez desires to live in a way that avoids harm and brings no pain to others. His prayer is both bold and sincere, trusting in God's goodness and mercy. The beautiful part is that God responds with compassion, granting Jabez's requests. This verse shows us that God hears our honest, heartfelt prayers and is willing to bless and guide us when we seek His help with a pure heart."
+    },
+    {
+        id: 9,
+        verse: "And Asa cried out to the LORD his God, and said, 'LORD, it is nothing for You to help, whether with many or with those who have no power; help us, O LORD our God, for we rest on You, and in Your name we go against this multitude. O LORD, You are our God; do not let man prevail against You!'",
+        reference: "2 Chronicles 14:11",
+        meditation: "Asa turns to God in a moment of great need, recognizing that God’s power isn’t limited by human strength or numbers. Asa acknowledges that whether facing a strong force or standing with little power, God can still bring victory. His prayer is one of trust and dependence, as he places everything in God’s hands, knowing that it’s not by human ability but by God's might that they can succeed. Asa rests in the assurance that they are not fighting alone, but with God leading them. His plea is a cry for divine help, knowing that, with God on their side, no earthly power can prevail. It’s a reminder that even when we feel powerless, we can rely on God’s strength, and He will carry us through."
+    },
+    {
+        id: 10,
+        verse: "But You have seen, for You observe trouble and grief, to repay it by Your hand. The helpless commits himself to You; You are the helper of the fatherless.",
+        reference: "Psalm 10:14",
+        meditation: "God sees the pain, trouble, and grief experienced by those who are suffering, especially those who feel powerless or abandoned. In times of helplessness, when people have no one else to turn to, they can commit themselves to God, trusting that He will act as their helper and protector. It is a message of hope for those who feel vulnerable, reminding them that they are not forgotten and that God will bring relief in His time. It speaks to the comfort found in knowing that even in the darkest moments, God cares and will respond with compassion."
+    },
+    {
+        id: 11,
+        verse: "Do not hide Your face from me; do not turn Your servant away in anger; You have been my help; do not leave me nor forsake me, O God of my salvation.",
+        reference: "Psalm 27:9",
+        meditation: "The speaker asks God not to turn away or abandon them in their time of need. The cry comes from someone who has experienced God's help in the past and now, in fear of losing that support, calls out desperately for God to stay close. It’s an expression of both trust and anxiety—trusting in God as their salvation but feeling the weight of uncertainty. At its core, it conveys the longing for reassurance, the comfort of knowing that even when life is overwhelming, God will not forsake them."
+    },
+    {
+        id: 12,
+        verse: "And the LORD shall help them and deliver them; He shall deliver them from the wicked, and save them, because they trust in Him.",
+        reference: "Psalm 37:40",
+        meditation: "God will come to the aid of those who place their trust in Him. It speaks to the reassurance that no matter the challenges or the presence of wickedness around them, God will intervene and provide protection and deliverance. For those who feel oppressed or overwhelmed, this verse encourages them to hold onto their faith, reminding them that their trust in God is not in vain. It’s a promise that they are not alone in their struggles—God sees their trust and will act to save them in His care and timing."
+    },
+    {
+        id: 13,
+        verse: "But I am poor and needy; yet the LORD thinks upon me. You are my help and my deliverer; do not delay, O my God.",
+        reference: "Psalm 40:17",
+        meditation: "This verse expresses a humble, heartfelt cry from someone who feels poor and needy, not just in material things but perhaps emotionally or spiritually as well. Despite their vulnerability, there is a deep comfort in knowing that God cares for them and is mindful of their situation. It’s a reminder that even in their lowliest state, they are not forgotten. The speaker acknowledges God as their only source of help and deliverance, urgently asking for God not to delay in bringing relief. It’s a message of both humility and hope, showing that even when we feel small or insignificant, God is attentive and ready to respond."
+    },
+    {
+        id: 14,
+        verse: "Give us help from trouble, for the help of man is useless.",
+        reference: "Psalm 60:11",
+        meditation: "Human efforts alone are often insufficient in times of deep trouble. It reflects a moment of vulnerability and realization that when faced with overwhelming challenges, relying solely on others or on human solutions may not bring the needed relief. Instead, the speaker turns to God, acknowledging that true, dependable help comes from Him. It’s an empathetic reminder for anyone who feels let down by earthly solutions that they can find strength and hope by turning to a higher power, trusting that God's help is unwavering and powerful when human help falls short."
+    },
+    {
+        id: 15,
+        verse: "Because You have been my help, therefore in the shadow of Your wings I will rejoice.",
+        reference: "Psalm 63:7",
+        meditation: "The speaker acknowledges that God has been a source of help in the past, and because of that, they find comfort and safety in His presence. The imagery of \"the shadow of Your wings\" conveys a sense of closeness, warmth, and refuge—like a child being sheltered by a loving parent. It’s a statement of faith that, even in difficult times, they can rejoice and find peace under God’s care. For anyone feeling weary or in need of safety, this verse reassures them that they can find joy and solace in the protective embrace of God, who has always been their help."
+    },
+    {
+        id: 16,
+        verse: "For He will deliver the needy when he cries, the poor also, and him who has no helper.",
+        reference: "Psalm 72:12",
+        meditation: "This verse is a compassionate reminder of God's deep care for those in need, especially for the vulnerable and powerless. It promises that God listens and responds to the cries of those who are suffering, particularly the poor and those who have no one else to help them. It reflects the idea that in moments of desperation, when people feel abandoned or helpless, God is there to deliver them. It offers hope to anyone who feels alone in their struggles, reminding them that they are not forgotten—God sees their pain and will come to their aid, providing the help and relief they need."
+    },
+    {
+        id: 17,
+        verse: "You who fear the LORD, trust in the LORD; He is their help and their shield.",
+        reference: "Psalm 115:11",
+        meditation: "Those who revere and respect God,place your full trust in Him.For he is not only your source of help in times of need but also a shield, providing safety and defense against life's challenges. For those who fear or face uncertainty, be reminded that you are not alone—God is both your guide and protector, and you can trust in His care."
+    },
+    {
+        id: 18,
+        verse: "My help comes from the LORD, who made heaven and earth.",
+        reference: "Psalm 121:2",
+        meditation: "In moments of uncertainty, it can be easy to feel overwhelmed, but remember that your help comes from the One who created everything—the heavens and the earth. The same God who crafted the universe is watching over you with love and care. You are not facing this alone. Just as He holds the stars in place, He is holding you in His hands, ready to guide and protect you. Trust that His power is greater than any struggle, and His love is deeper than any fear you may face. You can find peace in knowing that the Creator is your helper, always by your side."
+    },
+    {
+        id: 19,
+        verse: "Happy is he who has the God of Jacob for his help, whose hope is in the LORD his God.",
+        reference: "Psalm 146:5",
+        meditation: "True happiness and peace come from trusting in God. It speaks to the deep sense of security and joy we experience when we realize that we don’t have to rely solely on our own strength. God, who has been faithful through generations, is our helper. Just as He helped Jacob, He helps us now, guiding and protecting us. When our hope is placed in the Lord, we can rest assured that no matter the challenges we face, He is with us, offering His strength and love. This verse reassures us that happiness is found in leaning on God, who is always present to support us."
+    },
+    {
+        id: 20,
+        verse: "Fear not, for I am with you; be not dismayed, for I am your God. I will strengthen you, yes, I will help you, I will uphold you with My righteous right hand.",
+        reference: "Isaiah 41:10",
+        meditation: "I know you’re feeling overwhelmed, and it’s understandable to feel that way, but God’s promise is clear—He’s with you, even in this difficult moment. You don’t have to carry this weight on your own.God has always kept His promises, and He’ll keep them now. No matter what you’re going through, He is holding you with His righteous hand, and He won’t let you fall.",
+        prayer : "Lord, we thank You for Your promise to be with us. Please strengthen us right now. Help us to feel Your presence and remind us that You are holding us up, just as You’ve promised in Your word. We trust You, Lord, to give the peace and strength we need. Amen."
+    },
+    {
+        id: 21,
+        verse: "For I, the LORD your God, will hold your right hand, saying to you, 'Fear not, I will help you.'",
+        reference: "Isaiah 41:13",
+        meditation: "It’s natural to feel afraid or overwhelmed right now, but God promises to hold your hand through it all. He sees your struggle, and He’s saying, ‘Fear not, I’m here to help you.’ You’re not alone.God’s holding your hand every step of the way. When things feel too hard to handle, remember that He’s right there with you, whispering, ‘Don’t be afraid—I’m going to help you through this.’",
+        prayer : "Lord, we thank You that You are holding our hands right now. Help them to feel Your presence, to know that You are near, and to trust in Your promise to help. Remind them, Lord, that they don't need to be afraid because You are their strength and their guide. Amen."
+    },
+    {
+        id: 22,
+        verse: "Immediately the father of the child cried out and said with tears, 'Lord, I believe; help my unbelief!'",
+        reference: "Mark 9:24",
+        meditation: "I know it’s hard to always feel strong in faith, especially when life feels overwhelming. But even when you’re struggling, like the father in this story, God hears your cry for help. He’s not asking for perfect faith—He’s just asking for you to trust Him, even in your doubt.It’s okay to bring your doubts to God—He’s not disappointed in you. Just like the father in this story, you can cry out, ‘Lord, I believe, but help my unbelief!’ And God, in His love, will help you through it.",
+        prayer : "Lord, we believe, but sometimes it’s hard to hold onto faith in difficult times. Please help us in their moments of doubt, and remind them that You are still with them, even when they feel uncertain. Strengthen their faith and comfort them with Your presence. Amen."
+    },
+    {
+        id: 23,
+        verse: "But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things, and bring to your remembrance all things that I said to you.",
+        reference: "John 14:26",
+        meditation: "Jesus promised, ‘But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things, and bring to your remembrance all things that I said to you.’ This means that God has already given you His Spirit to guide and comfort you, especially in times of trouble.You don’t have to face this situation alone. The Holy Spirit, who Jesus promised to us, is right there with you. He’s your Helper, sent by the Father to guide you through difficult times, to remind you of God’s promises, and to give you the wisdom you need.",
+        prayer : "Lord, we thank You for sending the Holy Spirit to be our Helper and Comforter. I ask that You fill us with Your Spirit, giving us the peace and wisdom we need right now. Help us to feel Your presence and to trust that You are with us, guiding and protecting us. Amen."
+    }
 ];
 
 const loveVerses = [
-    { id: 1, verse: "He administers justice for the fatherless and the widow, and loves the stranger, giving him food and clothing.", reference: "Deuteronomy 10:18" , meditation : ""},
-    { id: 2, verse: "How precious is Your lovingkindness, O God! Therefore the children of men put their trust under the shadow of Your wings.", reference: "Psalm 36:7" , meditation : ""},
-    { id: 3, verse: "Because Your lovingkindness is better than life, my lips shall praise You.", reference: "Psalm 63:3" , meditation : ""},
-    { id: 4, verse: "As a father pities his children, so the LORD pities those who fear Him. For He knows our frame; He remembers that we are dust.", reference: "Psalm 103:13-14" , meditation : ""},
-    { id: 5, verse: "I will worship toward Your holy temple, and praise Your name for Your lovingkindness and Your truth; for You have magnified Your word above all Your name.", reference: "Psalm 138:2" , meditation : ""},
-    { id: 6, verse: "The LORD has appeared of old to me, saying, 'Yes, I have loved you with an everlasting love; therefore with lovingkindness I have drawn you.'", reference: "Jeremiah 31:3" , meditation : ""},
-    { id: 7, verse: "The LORD your God in your midst, the Mighty One, will save; He will rejoice over you with gladness, He will quiet you with His love, He will rejoice over you with singing.", reference: "Zephaniah 3:17" , meditation : ""},
-    { id: 8, verse: "Now hope does not disappoint, because the love of God has been poured out in our hearts by the Holy Spirit which was given to us.", reference: "Romans 5:5" , meditation : ""},
-    { id: 9, verse: "But God demonstrates His own love toward us, in that while we were still sinners, Christ died for us.", reference: "Romans 5:8" , meditation : ""},
-    { id: 10, verse: "And we know that all things work together for good to those who love God, to those who are the called according to His purpose.", reference: "Romans 8:28" , meditation : ""},
-    { id: 11, verse: "Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?", reference: "Romans 8:35" , meditation : ""},
-    { id: 12, verse: "Yet in all these things we are more than conquerors through Him who loved us. For I am persuaded that neither death nor life, nor angels nor principalities nor powers, nor things present nor things to come, nor height nor depth, nor any other created thing, shall be able to separate us from the love of God which is in Christ Jesus our Lord.", reference: "Romans 8:37-39" , meditation : ""},
-    { id: 13, verse: "But as it is written: 'Eye has not seen, nor ear heard, nor have entered into the heart of man the things which God has prepared for those who love Him.'", reference: "1 Corinthians 2:9" , meditation : ""},
-    { id: 14, verse: "But God, who is rich in mercy, because of His great love with which He loved us...", reference: "Ephesians 2:4" , meditation : ""},
-    { id: 15, verse: "To know the love of Christ which passes knowledge; that you may be filled with all the fullness of God.", reference: "Ephesians 3:19" , meditation : ""},
-    { id: 16, verse: "And walk in love, as Christ also has loved us and given Himself for us, an offering and a sacrifice to God for a sweet-smelling aroma.", reference: "Ephesians 5:2" , meditation : ""},
-    { id: 17, verse: "Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, casting all your care upon Him, for He cares for you.", reference: "1 Peter 5:6-7" , meditation : ""},
-    { id: 18, verse: "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.", reference: "1 John 1:9" , meditation : ""},
-    { id: 19, verse: "Behold what manner of love the Father has bestowed on us, that we should be called children of God! Therefore the world does not know us, because it did not know Him.", reference: "1 John 3:1" , meditation : ""},
-    { id: 20, verse: "He who does not love does not know God, for God is love. In this the love of God was manifested toward us, that God has sent His only begotten Son into the world, that we might live through Him. In this is love, not that we loved God, but that He loved us and sent His Son to be the propitiation for our sins.", reference: "1 John 4:8-10" , meditation : ""},
-    { id: 21, verse: "And we have known and believed the love that God has for us. God is love, and he who abides in love abides in God, and God in him.", reference: "1 John 4:16" , meditation : ""}
+    {
+        id : 1,
+        verse : "He administers justice for the fatherless and the widow, and loves the stranger, giving him food and clothing.",
+        reference : "Deuteronomy 10:18",
+        meditation : ""
+    },
+    {
+        id : 2,
+        verse : "How precious is Your lovingkindness, O God! Therefore the children of men put their trust under the shadow of Your wings.",
+        reference : "Psalm 36:7",
+        meditation : ""
+    },
+    {
+        id : 3,
+        verse : "Because Your lovingkindness is better than life, my lips shall praise You.",
+        reference : "Psalm 63:3",
+        meditation : ""
+    },
+    {
+        id : 4,
+        verse : "As a father pities his children, so the LORD pities those who fear Him. For He knows our frame; He remembers that we are dust.",
+        reference : "Psalm 103:13-14",
+        meditation : ""
+    },
+    {
+        id : 5,
+        verse : "I will worship toward Your holy temple, and praise Your name for Your lovingkindness and Your truth; for You have magnified Your word above all Your name.",
+        reference : "Psalm 138:2",
+        meditation : ""
+    },
+    {
+        id : 6,
+        verse : "The LORD has appeared of old to me, saying, 'Yes, I have loved you with an everlasting love; therefore with lovingkindness I have drawn you.'",
+        reference : "Jeremiah 31:3",
+        meditation : ""
+    },
+    {
+        id : 7,
+        verse : "The LORD your God in your midst, the Mighty One, will save; He will rejoice over you with gladness, He will quiet you with His love, He will rejoice over you with singing.",
+        reference : "Zephaniah 3:17",
+        meditation : ""
+    },
+    {
+        id : 8,
+        verse : "Now hope does not disappoint, because the love of God has been poured out in our hearts by the Holy Spirit which was given to us.",
+        reference : "Romans 5:5",
+        meditation : ""
+    },
+    {
+        id : 9,
+        verse : "But God demonstrates His own love toward us, in that while we were still sinners, Christ died for us.",
+        reference : "Romans 5:8",
+        meditation : ""
+    },
+    {
+        id : 10,
+        verse : "And we know that all things work together for good to those who love God, to those who are the called according to His purpose.",
+        reference : "Romans 8:28",
+        meditation : ""
+    },
+    {
+        id : 11,
+        verse : "Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?",
+        reference : "Romans 8:35",
+        meditation : ""
+    },
+    {
+        id : 12,
+        verse : "Yet in all these things we are more than conquerors through Him who loved us. For I am persuaded that neither death nor life, nor angels nor principalities nor powers, nor things present nor things to come, nor height nor depth, nor any other created thing, shall be able to separate us from the love of God which is in Christ Jesus our Lord.",
+        reference : "Romans 8:37-39",
+        meditation : ""
+    },
+    {
+        id : 13,
+        verse : "But as it is written: 'Eye has not seen, nor ear heard, nor have entered into the heart of man the things which God has prepared for those who love Him.'",
+        reference : "1 Corinthians 2:9",
+        meditation : ""
+    },
+    {
+        id : 14,
+        verse : "But God, who is rich in mercy, because of His great love with which He loved us...",
+        reference : "Ephesians 2:4",
+        meditation : ""
+    },
+    {
+        id : 15,
+        verse : "To know the love of Christ which passes knowledge; that you may be filled with all the fullness of God.",
+        reference : "Ephesians 3:19",
+        meditation : ""
+    },
+    {
+        id : 16,
+        verse : "And walk in love, as Christ also has loved us and given Himself for us, an offering and a sacrifice to God for a sweet-smelling aroma.",
+        reference : "Ephesians 5:2",
+        meditation : ""
+    },
+    {
+        id : 17,
+        verse : "Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, casting all your care upon Him, for He cares for you.",
+        reference : "1 Peter 5:6-7",
+        meditation : ""
+    },
+    {
+        id : 18,
+        verse : "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+        reference : "1 John 1:9",
+        meditation : ""
+    },
+    {
+        id : 19,
+        verse : "Behold what manner of love the Father has bestowed on us, that we should be called children of God! Therefore the world does not know us, because it did not know Him.",
+        reference : "1 John 3:1",
+        meditation : ""
+    },
+    {
+        id : 20,
+        verse : "He who does not love does not know God, for God is love. In this the love of God was manifested toward us, that God has sent His only begotten Son into the world, that we might live through Him. In this is love, not that we loved God, but that He loved us and sent His Son to be the propitiation for our sins.",
+        reference : "1 John 4:8-10",
+        meditation : ""
+    },
+    {
+        id : 21,
+        verse : "And we have known and believed the love that God has for us. God is love, and he who abides in love abides in God, and God in him.",
+        reference : "1 John 4:16",
+        meditation : ""
+    }
 ];
 
 const protectionVerses = [

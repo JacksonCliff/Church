@@ -22,6 +22,7 @@ import {updateDailyVerse} from "../../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../../LocalStorage/AsyncStorageFns'
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {Link} from "expo-router";
+import EmotionsModal from "../../components/General/EmotionsModal";
 
 const WIDTH = Dimensions.get("screen").width;
 
@@ -37,6 +38,7 @@ function Index(props) {
     return (
         <ScrollView>
             <View style={styles.container}>
+                <EmotionsModal/>
                 <View style={styles.sectionA}>
                     <ImageBackground imageStyle={"center"} style={{width:"100%",height:350,paddingTop : StatusBar.currentHeight}} source={require("../../assets/images/peaceful01.jpeg")}>
                         <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>

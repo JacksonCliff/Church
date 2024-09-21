@@ -313,13 +313,15 @@ const loveVerses = [
         id : 5,
         verse : "I will worship toward Your holy temple, and praise Your name for Your lovingkindness and Your truth; for You have magnified Your word above all Your name.",
         reference : "Psalm 138:2",
-        meditation : ""
+        meditation : "God values His word and promises so highly that He magnifies them above all else. That means He will always be faithful to what He has promised you. His lovingkindness and truth are constant, and you can trust that He will protect and help you, just as He has said in His Word.",
+        prayer : "Lord, we praise You for Your lovingkindness and faithfulness. We thank You that Your promises are sure and that You have magnified Your Word above all. I pray that [Name] would feel the strength of Your love and truth right now, trusting in Your promises and resting in Your protection. Amen."
     },
     {
         id : 6,
         verse : "The LORD has appeared of old to me, saying, 'Yes, I have loved you with an everlasting love; therefore with lovingkindness I have drawn you.'",
         reference : "Jeremiah 31:3",
-        meditation : ""
+        meditation : "God’s love is not dependent on circumstances—it is everlasting. He loves you just as much now, in your time of need, as He always has. His love is a secure foundation that never changes, and you are always safe in His care.",
+        prayer : "Lord, thank You for loving us with an everlasting love and for surrounding us with Your lovingkindness. I ask that [Name] would feel Your deep love and protection right now. Remind them that You are always near, drawing them close with Your gentle and caring presence. Amen."
     },
     {
         id : 7,
@@ -331,79 +333,115 @@ const loveVerses = [
         id : 8,
         verse : "Now hope does not disappoint, because the love of God has been poured out in our hearts by the Holy Spirit which was given to us.",
         reference : "Romans 5:5",
-        meditation : ""
+        meditation : "God’s love isn’t far away—it’s right there in your heart. The Holy Spirit has poured it into you, and that’s why you can have hope even when things feel hard. His love is real and present, comforting and protecting you in every situation.Your hope in God is not in vain—His love ensures that you will never be disappointed. You can trust in His care and protection, knowing that the love He has poured into your heart through the Holy Spirit is greater than any challenge you face.",
+        prayer : "Lord, we thank You for the hope You have given us through Your love, poured out in our hearts by the Holy Spirit. I ask that [Name] would feel that love in a deep and comforting way right now, reminding them that You are protecting and guiding them every step of the way. Amen."
     },
     {
         id : 9,
         verse : "But God demonstrates His own love toward us, in that while we were still sinners, Christ died for us.",
         reference : "Romans 5:8",
-        meditation : ""
+        meditation : "God’s protection and help are rooted in the most powerful display of love—Christ’s death on the cross. This means you can trust that if God was willing to give His own Son for you, He will also protect, guide, and help you through whatever you're facing.You don’t have to be perfect to receive God’s love and protection. Even while we were still sinners, God loved us enough to send Jesus. That same love covers you now, offering you the strength, guidance, and protection you need, no matter what you're going through.",
+        prayer : "Lord, we thank You for showing Your love for us through Jesus’ sacrifice, even while we were still sinners. I ask that [Name] would feel the depth of that love right now and know that You are protecting and helping them in every moment of their life. Let them rest in the security of Your grace. Amen."
     },
     {
         id : 10,
         verse : "And we know that all things work together for good to those who love God, to those who are the called according to His purpose.",
         reference : "Romans 8:28",
-        meditation : ""
+        meditation : "God sees the bigger picture, even when we can’t. He is using every part of your life—the good and the difficult—to bring about something beautiful. You may not see it now, but you can trust that God is working all things together for your good.",
+        prayer : "Lord, we thank You that You are always working all things together for good for those who love You. I ask that [Name] would feel peace and trust in Your plan, knowing that You are guiding and protecting them through every part of their life, even when it’s hard to see. Help them to rest in the knowledge that You are in control. Amen."
     },
     {
         id : 11,
         verse : "Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?",
         reference : "Romans 8:35",
-        meditation : ""
+        meditation : "No amount of tribulation, distress, or danger can ever separate you from Christ’s love. He is right there with you, protecting and sustaining you through every hardship. His love is stronger than anything life can throw your way.",
+        prayer : "Lord, we thank You for Your unbreakable love, which nothing in this world can separate us from. I pray that [Name] would feel the strength of that love right now, knowing that no trial or hardship can remove them from Your care. Help them to rest in Your protection and trust that Your love will carry them through. Amen."
     },
     {
         id : 12,
         verse : "Yet in all these things we are more than conquerors through Him who loved us. For I am persuaded that neither death nor life, nor angels nor principalities nor powers, nor things present nor things to come, nor height nor depth, nor any other created thing, shall be able to separate us from the love of God which is in Christ Jesus our Lord.",
         reference : "Romans 8:37-39",
-        meditation : ""
+        meditation : "You are more than a conqueror. That means through God’s love, you have the strength to overcome whatever you're going through. His love makes you victorious, even when the battle feels tough. You’re not alone, and God’s power is carrying you through.",
+        prayer : "Lord, we thank You for the victory You have given us through Your love. I ask that [Name] would feel the power of that love right now, knowing that nothing in this world can separate them from You. Help them to stand firm, trusting that Your love will protect and guide them in every moment. Amen."
     },
     {
         id : 13,
         verse : "But as it is written: 'Eye has not seen, nor ear heard, nor have entered into the heart of man the things which God has prepared for those who love Him.'",
         reference : "1 Corinthians 2:9",
-        meditation : ""
+        meditation : "No matter what you're going through, know that God has amazing things in store for you. His plans are far greater than anything we can see or understand. Even when it’s hard to see the way forward, trust that He is working on something beautiful for your future.",
+        prayer : "Lord, we thank You for the incredible things You have prepared for those who love You. I pray that [Name] would feel hope and peace knowing that Your plans for them are greater than anything they can see right now. Help them to trust in Your protection and to rest in the knowledge that You are working for their good. Amen."
     },
     {
         id : 14,
         verse : "But God, who is rich in mercy, because of His great love with which He loved us...",
         reference : "Ephesians 2:4",
-        meditation : ""
+        meditation : "God’s love for you is so great that He is always pouring out mercy and protection, even when life feels overwhelming. His love never fails, and you can trust that He is watching over you with deep care and compassion.",
+        prayer : "Lord, we thank You for Your rich mercy and great love. I ask that [Name] would feel the comfort of Your presence and protection right now. May they be assured that Your love is unfailing and Your mercy is lifting them up in every difficult moment. Amen."
     },
     {
         id : 15,
         verse : "To know the love of Christ which passes knowledge; that you may be filled with all the fullness of God.",
         reference : "Ephesians 3:19",
-        meditation : ""
+        meditation : "In a small, quiet village nestled between rolling hills, there lived a young woman named Miriam. She had always believed in God, but recently, she felt distant and unsure. Life’s burdens weighed heavy on her heart, and she wondered if God truly loved her. One evening, as the sun set, casting a golden glow over the fields, Miriam wandered into the village chapel. It was a place she hadn’t visited in a long time.\n" +
+            "Sitting in the stillness, Miriam whispered a prayer. “God, I want to feel Your love again, but I don’t know how.” She bowed her head, and as she did, an old, worn Bible caught her eye on the altar. She picked it up and flipped through its pages until her eyes landed on a verse: “To know the love of Christ which passes knowledge; that you may be filled with all the fullness of God.”\n" +
+            "\n" +
+            "She read the words aloud, slowly. As she did, something stirred in her heart. It was as if a warmth she couldn’t explain was filling her from within. Tears welled up in her eyes—not from sadness, but from a sense of being embraced by something far bigger and more profound than she could ever comprehend. It wasn’t just words on a page; it was the love of Christ, a love that was deeper than knowledge or understanding, pouring into her soul.\n" +
+            "\n" +
+            "Miriam didn’t need to understand everything. She realized that God’s love wasn’t something to be fully grasped by her mind but something to be experienced in her heart. In that quiet moment, she felt God’s fullness filling every empty corner of her being. And she knew—she was loved, always had been, and always would be.",
+        prayer : "Heavenly Father,I thank You for Your love that surpasses all understanding. I may not always comprehend it fully, but I trust that it is deeper, wider, and more powerful than I could ever imagine. Fill me with the love of Christ, that my heart would overflow with Your presence and peace. Help me to rest in the truth that Your love is constant, even when I feel far away. May I be filled with all the fullness of God, knowing that Your love sustains me, protects me, and carries me through every moment of life.In Jesus' name, Amen."
     },
     {
         id : 16,
         verse : "And walk in love, as Christ also has loved us and given Himself for us, an offering and a sacrifice to God for a sweet-smelling aroma.",
         reference : "Ephesians 5:2",
-        meditation : ""
+        meditation : "There was a man named Samuel who lived in a busy city. Each day, the hustle and demands of life pulled him in every direction. He worked hard, took care of his family, and tried to be kind to those around him. But lately, he felt something was missing. He couldn’t shake the feeling that he was going through the motions, losing sight of what truly mattered.\n" +
+            "\n" +
+            "One day, as he walked through a quiet park to escape the noise of the city, Samuel overheard a group talking about a Bible verse: “And walk in love, as Christ also has loved us and given Himself for us, an offering and a sacrifice to God for a sweet-smelling aroma.” The words stayed with him, stirring something deep in his heart. He thought about how Christ loved so deeply that He gave everything—even His own life. And here Samuel was, feeling overwhelmed, yet forgetting that the most important thing he could do was to love.\n" +
+            "\n" +
+            "That evening, Samuel sat quietly in his room, reflecting on the verse. He realized that walking in love meant more than just being kind—it meant living sacrificially, just as Christ had done. Christ’s love wasn’t just a fleeting emotion, but a lifelong offering, one that gave Samuel hope and showed him how to live. The love Christ gave was like a sweet-smelling aroma to God, a beautiful act of worship.\n" +
+            "\n" +
+            "Samuel made a decision that night. He would no longer rush through life out of obligation, but would walk in love, seeking to reflect Christ’s sacrificial love in his actions. The next day, when his neighbor needed help, Samuel offered his time. When his coworker was stressed, he listened with care. These small acts, given in love, filled his heart in a way that nothing else had. He began to understand what it meant to live as an offering, just as Christ had done for him.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "Thank You for the love of Christ, who gave Himself for us as an offering and a sacrifice. Help me to walk in that same love, not just in words but in my actions. Teach me to live sacrificially, just as Jesus did, offering myself in love to those around me. May my life be like a sweet-smelling aroma to You, an act of worship that brings glory to Your name. Strengthen me to love as Christ loves, so that others may see Your goodness through my life.\n" +
+            "\n" +
+            "In Jesus' name, Amen."
     },
     {
         id : 17,
         verse : "Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, casting all your care upon Him, for He cares for you.",
         reference : "1 Peter 5:6-7",
-        meditation : ""
+        meditation : "Sometimes, it’s hard to wait, but God’s timing is always perfect. He knows exactly when to lift you up and provide what you need. Trust that under His mighty hand, you are safe, and He will act at the right moment. Until then, rest in His love and care for you.",
+        prayer : "Lord, we thank You for Your mighty hand that holds us and for Your deep care for [Name]. I pray that they would feel Your presence and protection right now, and that they would find peace in casting all their cares upon You. Help them to trust Your timing and rest in the knowledge that You are working all things for their good. Amen."
     },
     {
         id : 18,
         verse : "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
         reference : "1 John 1:9",
-        meditation : ""
+        meditation : "When God forgives, He doesn’t just stop at forgiveness. He also cleanses us, removing all the things that separate us from Him. That cleansing brings protection—because when you’re walking in His grace, you are shielded by His love and care. You can trust that He is watching over you, keeping you safe, and guiding you through every step.",
+        prayer : "Lord, we thank You for Your faithfulness to forgive and cleanse us when we confess our sins. I pray that [Name] would feel the peace that comes from knowing they are fully forgiven and made new by Your grace. Let them rest in the assurance that You are protecting and guiding them, even through the toughest times. Amen."
     },
     {
         id : 19,
         verse : "Behold what manner of love the Father has bestowed on us, that we should be called children of God! Therefore the world does not know us, because it did not know Him.",
         reference : "1 John 3:1",
-        meditation : ""
+        meditation : "You can always find peace in the fact that you are God’s beloved child. His love for you is a safe place where you can rest, knowing that He is watching over you and will never let go of you. Even when the world feels uncertain, God’s love remains steadfast.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "Thank You for the amazing love You have shown us by calling us Your children. Help us to always remember that we belong to You, even when the world doesn’t understand us. Fill our hearts with peace and confidence in Your love, knowing that being Your child is the greatest blessing we could ever receive. Guide us to live in the fullness of that love each day.\n" +
+            "\n" +
+            "In Jesus' name, Amen."
     },
     {
         id : 20,
         verse : "He who does not love does not know God, for God is love. In this the love of God was manifested toward us, that God has sent His only begotten Son into the world, that we might live through Him. In this is love, not that we loved God, but that He loved us and sent His Son to be the propitiation for our sins.",
         reference : "1 John 4:8-10",
-        meditation : ""
+        meditation : "As you recognize God’s love in your life, it gives you strength to face challenges and to love others, too. You are part of a larger story of love, and that love can be a source of hope and comfort in your life. Remember, God’s love is what sustains you and provides the help you need.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "Thank You for Your love, a love so deep and pure that You sent Your only Son to be the sacrifice for our sins. Help me to fully understand that this love is not based on what I have done, but on who You are. Fill my heart with Your love, and let that love flow through me to others. Teach me to walk in the truth that You loved me first, and because of that, I can live with peace, hope, and joy. Help me to never forget that You are love, and that I am surrounded by Your presence every day.\n" +
+            "\n" +
+            "In Jesus’ name, Amen."
     },
     {
         id : 21,

@@ -447,7 +447,8 @@ const loveVerses = [
         id : 21,
         verse : "And we have known and believed the love that God has for us. God is love, and he who abides in love abides in God, and God in him.",
         reference : "1 John 4:16",
-        meditation : ""
+        meditation : "no matter how difficult or overwhelming life may feel, God surrounds us with His love. To abide in love is to live in the shelter of God’s presence, where we can find comfort, safety, and peace. When you feel lost or uncertain, remember that His love is unchanging and ever-present, holding you close, guiding you through every challenge. You are deeply loved, and in that love, God is always with you.",
+        prayer : "\"Lord, we trust in Your love and protection. Please surround [name] with Your peace and remind them that You are always with them. Strengthen their faith and give them courage, knowing that You are their refuge.Amen."
     }
 ];
 

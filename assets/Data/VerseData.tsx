@@ -453,28 +453,177 @@ const loveVerses = [
 ];
 
 const protectionVerses = [
-    { id: 1, verse: "And Moses said to the people, ‘Do not be afraid. Stand still, and see the salvation of the LORD, which He will accomplish for you today. For the Egyptians whom you see today, you shall see again no more forever. The LORD will fight for you, and you shall hold your peace.’", reference: "Exodus 14:13-14" , meditation : ""},
-    { id: 2, verse: "For the LORD your God is He who goes with you, to fight for you against your enemies, to save you.", reference: "Deuteronomy 20:4" , meditation : ""},
-    { id: 3, verse: "Then Jonathan said to the young man who bore his armor, ‘Come, let us go over to the garrison of these uncircumcised; it may be that the LORD will work for us. For nothing restrains the LORD from saving by many or by few.’", reference: "1 Samuel 14:6" , meditation : ""},
-    { id: 4, verse: "The God of my strength, in whom I will trust; my shield and the horn of my salvation, my stronghold and my refuge; my Savior, You save me from violence. I will call upon the LORD, who is worthy to be praised; so shall I be saved from my enemies.", reference: "2 Samuel 22:3-4" , meditation : ""},
-    { id: 5, verse: "Show Your marvelous lovingkindness by Your right hand, O You who save those who trust in You from those who rise up against them. Keep me as the apple of Your eye; hide me under the shadow of Your wings.", reference: "Psalm 17:7-8" , meditation : ""},
-    { id: 6, verse: "This poor man cried out, and the LORD heard him, and saved him out of all his troubles.", reference: "Psalm 34:6" , meditation : ""},
-    { id: 7, verse: "The righteous cry out, and the LORD hears, and delivers them out of all their troubles. The LORD is near to those who have a broken heart, and saves such as have a contrite spirit.", reference: "Psalm 34:17-18" , meditation : ""},
-    { id: 8, verse: "Many are the afflictions of the righteous, but the LORD delivers him out of them all.", reference: "Psalm 34:19" , meditation : ""},
-    { id: 9, verse: "He shall send from heaven and save me; He reproaches the one who would swallow me up. Selah. God shall send forth His mercy and His truth.", reference: "Psalm 57:3" , meditation : ""},
-    { id: 10, verse: "He will bring justice to the poor of the people; He will save the children of the needy, and will break in pieces the oppressor.", reference: "Psalm 72:4" , meditation : ""},
-    { id: 11, verse: "A thousand may fall at your side, and ten thousand at your right hand; but it shall not come near you.", reference: "Psalm 91:7" , meditation : ""},
-    { id: 12, verse: "Though I walk in the midst of trouble, You will revive me; You will stretch out Your hand against the wrath of my enemies, and Your right hand will save me.", reference: "Psalm 138:7" , meditation : ""},
-    { id: 13, verse: "He will fulfill the desire of those who fear Him; He also will hear their cry and save them.", reference: "Psalm 145:19" , meditation : ""},
-    { id: 14, verse: "The name of the LORD is a strong tower; the righteous run to it and are safe.", reference: "Proverbs 18:10" , meditation : ""},
-    { id: 15, verse: "Do not say, ‘I will recompense evil’; wait for the LORD, and He will save you.", reference: "Proverbs 20:22" , meditation : ""},
-    { id: 16, verse: "The fear of man brings a snare, but whoever trusts in the LORD shall be safe.", reference: "Proverbs 29:25" , meditation : ""},
-    { id: 17, verse: "The LORD is good, a stronghold in the day of trouble; and He knows those who trust in Him.", reference: "Nahum 1:7" , meditation : ""},
-    { id: 18, verse: "The LORD your God in your midst, the Mighty One, will save; He will rejoice over you with gladness, He will quiet you with His love, He will rejoice over you with singing.", reference: "Zephaniah 3:17" , meditation : ""},
-    { id: 19, verse: "Yet in all these things we are more than conquerors through Him who loved us.", reference: "Romans 8:37" , meditation : ""},
-    { id: 20, verse: "We are hard-pressed on every side, yet not crushed; we are perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed.", reference: "2 Corinthians 4:8-9" , meditation : ""},
-    { id: 21, verse: "Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand.", reference: "Ephesians 6:13" , meditation : ""},
-    { id: 22, verse: "So we may boldly say: ‘The LORD is my helper; I will not fear. What can man do to me?’", reference: "Hebrews 13:6" , meditation : ""}
+    {
+        id : 1,
+        verse : "And Moses said to the people, ‘Do not be afraid. Stand still, and see the salvation of the LORD, which He will accomplish for you today. For the Egyptians whom you see today, you shall see again no more forever. The LORD will fight for you, and you shall hold your peace.’",
+        reference : "Exodus 14:13-14",
+        meditation : "Moses said to the Israelites, 'Do not be afraid. Stand still, and see the salvation of the LORD… The LORD will fight for you, and you shall hold your peace.' Just like the Israelites, God is fighting for you, even when things seem impossible.In that moment, the Israelites couldn't see a way out, but God made a way where there seemed to be none. He parted the sea and led them to safety. God’s power hasn't changed—He’s still able to do the impossible in your life.",
+        prayer : "Let’s pray together: ‘Lord, we trust You to fight for us. Even when we can’t see the way forward, we believe You are working on our behalf. Give us peace and help us to hold on to Your promises. Amen.’"
+    },
+    {
+        id : 2,
+        verse : "For the LORD your God is He who goes with you, to fight for you against your enemies, to save you.",
+        reference : "Deuteronomy 20:4",
+        meditation : "God isn't just watching your struggle from afar—He’s with you, fighting for you. Even when you feel powerless, He is strong and able to overcome whatever you’re facing.God’s timing might not be what we expect, but His deliverance is certain. Keep trusting Him, even if you can’t see the full picture right now.",
+        prayer : "Let’s pray together: ‘Lord, we come before You, trusting that You are with us in every battle. Help us to rest in Your strength and find peace in knowing You are fighting for us. Give us the faith to trust You through this. Amen.’"
+    },
+    {
+        id : 3,
+        verse : "Then Jonathan said to the young man who bore his armor, ‘Come, let us go over to the garrison of these uncircumcised; it may be that the LORD will work for us. For nothing restrains the LORD from saving by many or by few.’",
+        reference : "1 Samuel 14:6",
+        meditation : "Sometimes, all we can do is take one step forward, trusting that God will meet us there. Jonathan didn’t know exactly what would happen, but he moved forward in faith, knowing that God could work in ways beyond what he could see.",
+        prayer : "Let’s pray together: ‘Lord, we trust that You are not limited by what we see. Give us the courage to take steps of faith, knowing that You are with us and that You can bring victory in any situation. Help us to trust You, no matter what. Amen.’"
+    },
+    {
+        id : 4,
+        verse : "The God of my strength, in whom I will trust; my shield and the horn of my salvation, my stronghold and my refuge; my Savior, You save me from violence. I will call upon the LORD, who is worthy to be praised; so shall I be saved from my enemies.",
+        reference : "2 Samuel 22:3-4",
+        meditation : "In 2 Samuel, David calls God 'the God of my strength, my shield, my stronghold, and my refuge.' He knew that God was his protector, his Savior. In the same way, God is your strength, your shield, and your Savior.God is your stronghold, the place where you can find safety and security, even in the middle of a storm. He’s your shield, defending you from harm. No matter what comes against you, God is covering you.",
+        prayer : "Let’s pray: ‘Lord, You are our stronghold and refuge. When we feel overwhelmed, remind us that You are our shield, our strength, and our Savior. We trust You to protect and guide us, even when we don’t see a way forward. Amen.’"
+    },
+    {
+        id : 5,
+        verse : "Show Your marvelous lovingkindness by Your right hand, O You who save those who trust in You from those who rise up against them. Keep me as the apple of Your eye; hide me under the shadow of Your wings.",
+        reference : "Psalm 17:7-8",
+        meditation : "God’s wings symbolize His protection and closeness. He hides you under His wings, keeping you safe and sheltered, just like a mother bird protects her young. He is your refuge, and no harm can come to you that He is not aware of.You are the apple of God’s eye—that means you are precious to Him. He watches over you with the deepest care and attention. Even when you feel unseen, God always has His eye on you, protecting and loving you.",
+        prayer : "Let’s pray: ‘Lord, we thank You for Your lovingkindness that never fails. We ask You to hide us under the shadow of Your wings, to keep us safe as the apple of Your eye. Give us peace, knowing that You are always watching over us and protecting us. Amen.’"
+    },
+    {
+        id : 6,
+        verse : "This poor man cried out, and the LORD heard him, and saved him out of all his troubles.",
+        reference : "Psalm 34:6",
+        meditation : "The Bible tells us, ‘This poor man cried out, and the LORD heard him, and saved him out of all his troubles.’ This verse shows us that when we cry out to God, no matter how desperate we feel, He hears us. He sees your pain, and He’s already at work to help you.I know it’s hard when things don’t change overnight, but God is faithful. He promises to save us from our troubles, and His timing is always perfect. Keep trusting Him, even when the road seems long.",
+        prayer : "Let’s pray: ‘Lord, we cry out to You, knowing that You hear us and care for us. Please bring peace and deliverance in this situation. Help us to trust in Your protection and timing, knowing You will save us from all our troubles. Amen.’"
+    },
+    {
+        id : 7,
+        verse : "The righteous cry out, and the LORD hears, and delivers them out of all their troubles. The LORD is near to those who have a broken heart, and saves such as have a contrite spirit.",
+        reference : "Psalm 34:17-18",
+        meditation : "God hears you. Every time you pray, even when it feels like your prayers are quiet or unsure, He is listening. He never turns away from those who cry out to Him.When your heart is broken, God is even closer to you. He doesn’t leave you to struggle alone—He draws near to comfort and strengthen you. You are never alone in this.",
+        prayer : "Let’s pray: ‘Lord, we thank You that You hear us when we cry out to You. Be near in this moment, especially to the brokenhearted. Bring comfort, deliverance, and peace in ways only You can. Help us trust that You are working, even in the midst of trouble. Amen.’"
+    },
+    {
+        id : 8,
+        verse : "Many are the afflictions of the righteous, but the LORD delivers him out of them all.",
+        reference : "Psalm 34:19",
+        meditation : "Challenges and hardships are a natural part of life, even for those who strive to live faithfully. But the key part is God’s promise to deliver us from all those afflictions.It’s hard to wait for God’s answers, but remember that He is always on time. He sees what we can’t and knows exactly when and how to bring deliverance.Think about the times God has come through for you before. Just as He was with you then, He is with you now.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "We come before You, asking for Your peace and protection over us. Remind us that even though we face many challenges, You are our refuge and will deliver us from all our troubles. Strengthen our faith, help us to trust in Your timing, and surround us with Your love and comfort. We place our hope in Your promises.\n" +
+            "\n" +
+            "In Jesus’ name,\n" +
+            "Amen."
+    },
+    {
+        id : 9,
+        verse : "He shall send from heaven and save me; He reproaches the one who would swallow me up. Selah. God shall send forth His mercy and His truth.",
+        reference : "Psalm 57:3",
+        meditation : "Pray for God’s Intervention: When facing challenges, pray confidently, trusting that God hears from heaven and will send help in His perfect way.\n" +
+            "Rest in His Protection: Remind yourself that God is protecting you from all forces that seek to harm you, even when it feels overwhelming.\n" +
+            "Cling to His Mercy and Truth: Rely on God’s grace to get through each day and meditate on His Word for guidance and reassurance.\n" +
+            "Pause to Reflect: Take time to remember God’s faithfulness in the past and trust Him for the future, even in the middle of your struggles.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "We trust in Your promise to save us from the challenges we face. Send Your mercy and truth to guide us, and protect us from anything that seeks to overwhelm us. Help us rest in Your presence and trust that You will deliver us in Your perfect time.\n" +
+            "\n" +
+            "In Jesus' name,\n" +
+            "Amen."
+    },
+    {
+        id : 10,
+        verse : "He will bring justice to the poor of the people; He will save the children of the needy, and will break in pieces the oppressor.",
+        reference : "Psalm 72:4",
+        meditation : "Trust in God's Justice: When faced with unfairness or oppression, you can rest in the knowledge that God will bring justice and act on behalf of those who are suffering.\n" +
+            "Seek God's Protection: In times of need, believers can look to God as their protector, knowing that He cares deeply for the vulnerable and promises to rescue those in distress.\n" +
+            "Act with Compassion: You are called to reflect God's heart for the needy by showing kindness and offering help to those in difficult circumstances.\n" +
+            "Stand Against Oppression: This verse also inspires believers to actively stand up against oppression and injustice, both personally and in society.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "We thank You for being a God of justice and mercy. Please bring justice to those who are oppressed and protect the vulnerable. Save those in need, and break the power of those who seek to harm others. Help us to trust in Your justice and to be Your hands of compassion in the world.\n" +
+            "\n" +
+            "In Jesus’ name,\n" +
+            "Amen."
+    },
+    {
+        id : 11,
+        verse : "A thousand may fall at your side, and ten thousand at your right hand; but it shall not come near you.",
+        reference : "Psalm 91:7",
+        meditation : "The imagery of \"a thousand may fall at your side, and ten thousand at your right hand\" shows that even when chaos, destruction, or danger surrounds a believer, God can keep them safe. In times of crisis—whether that’s a health scare, danger in the workplace, personal struggles, or global challenges like pandemics or natural disasters—this verse reminds Christians to trust that God is their protector.\n" +
+            "\n" +
+            "It assures believers that while trouble may come close and affect others, God is able to shield them from harm according to His will. This doesn’t mean they are immune to all difficulties, but it affirms that God is in control, and nothing happens outside of His care.",
+        prayer : "Heavenly Father,\n" +
+            "\n" +
+            "Thank You for Your promise of protection. In times of danger and uncertainty, we trust that even if a thousand fall around us, You will keep us safe. Help us to rest in Your presence and find peace in Your sovereignty. Strengthen our faith and remind us that You are always with us, guarding us from harm.\n" +
+            "\n" +
+            "In Jesus’ name,\n" +
+            "Amen."
+    },
+    {
+        id : 12,
+        verse : "Though I walk in the midst of trouble, You will revive me; You will stretch out Your hand against the wrath of my enemies, and Your right hand will save me.",
+        reference : "Psalm 138:7",
+        meditation : ""
+    },
+    {
+        id : 13,
+        verse : "He will fulfill the desire of those who fear Him; He also will hear their cry and save them.",
+        reference : "Psalm 145:19",
+        meditation : ""
+    },
+    {
+        id : 14,
+        verse : "The name of the LORD is a strong tower; the righteous run to it and are safe.",
+        reference : "Proverbs 18:10",
+        meditation : ""
+    },
+    {
+        id : 15,
+        verse : "Do not say, ‘I will recompense evil’; wait for the LORD, and He will save you.",
+        reference : "Proverbs 20:22",
+        meditation : ""
+    },
+    {
+        id : 16,
+        verse : "The fear of man brings a snare, but whoever trusts in the LORD shall be safe.",
+        reference : "Proverbs 29:25",
+        meditation : ""
+    },
+    {
+        id : 17,
+        verse : "The LORD is good, a stronghold in the day of trouble; and He knows those who trust in Him.",
+        reference : "Nahum 1:7",
+        meditation : ""
+    },
+    {
+        id : 18,
+        verse : "The LORD your God in your midst, the Mighty One, will save; He will rejoice over you with gladness, He will quiet you with His love, He will rejoice over you with singing.",
+        reference : "Zephaniah 3:17",
+        meditation : ""
+    },
+    {
+        id : 19,
+        verse : "Yet in all these things we are more than conquerors through Him who loved us.",
+        reference : "Romans 8:37",
+        meditation : ""
+    },
+    {
+        id : 20,
+        verse : "We are hard-pressed on every side, yet not crushed; we are perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed.",
+        reference : "2 Corinthians 4:8-9",
+        meditation : ""
+    },
+    {
+        id : 21,
+        verse : "Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand.",
+        reference : "Ephesians 6:13",
+        meditation : ""
+    },
+    {
+        id : 22,
+        verse : "So we may boldly say: ‘The LORD is my helper; I will not fear. What can man do to me?’",
+        reference : "Hebrews 13:6",
+        meditation : ""
+    }
 ];
 
 const peaceVerses  = [

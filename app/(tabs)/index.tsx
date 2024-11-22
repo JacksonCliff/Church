@@ -47,12 +47,12 @@ function Index(props) {
                                 <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
                             </Shaking>
                         </View>
-                        <View style={{justifyContent:"center",height:"70%"}}>
-                            <Text numberOfLines={4} style={{color:"white",fontSize:20,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.value}</Text>
-                            <Text style={{color:"white",fontSize:14,marginTop:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.reference}</Text>
+                        <View style={{justifyContent:"center",alignItems:"center",flex:1}}>
+                            <Text numberOfLines={4} style={{color:"white",fontSize:20,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.value}</Text>
+                            <Text style={{color:"white",fontSize:14,marginTop:30,marginHorizontal:5,textAlign:"center"}}>{dailyVerse.reference}</Text>
 
                         </View>
-                        <View style={{position:"absolute",bottom:40,width:"100%",flexDirection:"row",justifyContent:"center"}}>
+                        <View style={{width:"100%",flexDirection:"row",justifyContent:"center",paddingBottom:10}}>
                             <TouchableOpacity style={styles.glassButton}>
                                 <FontAwesome name={"share"} size={20} color={COLORS.white}/>
                             </TouchableOpacity>
@@ -62,6 +62,7 @@ function Index(props) {
                             </TouchableOpacity>
 
                         </View>
+                        <View style={{height:20,width:"100%"}}/>
                     </ImageBackground>
                 </View>
 

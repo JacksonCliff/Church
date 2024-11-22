@@ -9,6 +9,7 @@ const tintColorDark = '#fff';
 export const COLORS = {
   white : "white",
   dark08 : "rgba(0,0,0,0.8)",
+  light06 : "rgba(255,255,255,0.6)",
   btnPrimary : "#c8a385",
   btnSecondary : "",
   black : "black",

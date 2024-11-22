@@ -1,5 +1,5 @@
-import React from 'react';
-import { Modal, Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import React , {useState} from 'react';
+import {Modal , Text , TouchableOpacity , View , StyleSheet , Dimensions} from "react-native";
 import { COLORS } from "../../constants/Colors";
 
 const data = [
@@ -14,27 +14,42 @@ const data = [
     { id: 9, value: "Blessed", emote: "🥰" }
 ];
 
+const screenWidth = Dimensions.get("screen").width;
+
 function EmotionsModal(props) {
+
+    const [open,setOpen] = useState(true);
+
+    const handleToggle = () => {
+        setOpen(false);
+    }
+
     return (
         <Modal
             transparent={true}
-            visible={true}
+            visible={open}
             animationType="fade"
         >
             <View style={{ flex: 1, backgroundColor: COLORS.dark08, padding: 20 }}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={handleToggle} style={{width: 30,height : 30,alignSelf:"flex-end"}}>
                     <Text style={{ color: COLORS.white }}>Skip</Text>
                 </TouchableOpacity>
 
-                <Text style={{ color: COLORS.white, marginBottom: 20 }}>How do you feel today?</Text>
+                <View style={{flex:1,alignItems:"center",marginTop:"30%"}}>
+                    <Text style={{ color: COLORS.white, marginBottom: 20 ,fontSize : 20,marginVertical:10}}>How do you feel today?</Text>
 
-                <View style={styles.emoteContainer}>
-                    {data.map(item => (
-                        <TouchableOpacity key={item.id} style={styles.emoteButton}>
-                            <Text style={styles.emoteText}>{item.emote}</Text>
-                        </TouchableOpacity>
-                    ))}
+                    <View style={styles.emoteContainer}>
+                        {data.map(item => (
+                            <View key={item.id} style={styles.emoteBtnContainer}>
+                                <TouchableOpacity style={styles.emoteBtn}>
+                                    <Text style={styles.emoteText}>{item.emote}</Text>
+                                </TouchableOpacity>
+                                <Text style={{color:COLORS.white}}>{item.value}</Text>
+                            </View>
+                        ))}
+                    </View>
                 </View>
+
             </View>
         </Modal>
     );
@@ -44,16 +59,23 @@ const styles = StyleSheet.create({
     emoteContainer: {
         flexDirection: "row",
         flexWrap: "wrap",
-        justifyContent: "space-around", // Use space-around for equal spacing
+        justifyContent: "space-around",
+        alignSelf : 'center'
     },
-    emoteButton: {
-        width: '30%', // Set width to ensure 3 items per row
-        backgroundColor: COLORS.gray,
+    emoteBtnContainer: {
+        width: screenWidth * 0.28,
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom : 10
+    },
+    emoteBtn: {
+        width: '100%',
+        backgroundColor: COLORS.light06,
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 10,
-        padding: 10,
-        marginVertical: 10, // Optional: Adds some vertical space between rows
+        height  : screenWidth * 0.28,
+
     },
     emoteText: {
         fontSize: 50,

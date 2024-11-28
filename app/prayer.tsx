@@ -11,11 +11,11 @@ import {
 } from "react-native";
 import {COLORS} from "../constants/Colors";
 import Shaking from "../components/Animation/Shaking";
-import {FontAwesome, FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
-import Pulsing from "../components/Animation/Pulsing";
-import {Link} from "expo-router";
-import AppBtn from "../components/General/AppBtn";
+import {FontAwesome, Foundation, MaterialIcons} from "@expo/vector-icons";
+
 import {useSelector} from "react-redux";
+import ShareBtn from "../components/General/ShareBtn";
+import CopyBtn from "../components/General/CopyBtn";
 
 const HEIGHT = Dimensions.get("screen").height;
 
@@ -44,13 +44,9 @@ function Prayer(props) {
                             </Text>
                         </View>
                         <View style={{position:"absolute",bottom:40,width:"100%",flexDirection:"row",justifyContent:"center"}}>
-                            <TouchableOpacity style={styles.glassButton}>
-                                <FontAwesome name={"share"} size={20} color={COLORS.white}/>
-                            </TouchableOpacity>
+                            <ShareBtn/>
                             <View style={{width:80}}/>
-                            <TouchableOpacity style={styles.glassButton}>
-                                <Foundation name={"clipboard-notes"} size={20} color={COLORS.white}/>
-                            </TouchableOpacity>
+                            <CopyBtn/>
                         </View>
                     </ImageBackground>
                 </View>

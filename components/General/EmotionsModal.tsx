@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useEffect , useState} from 'react';
 import {Modal , Text , TouchableOpacity , View , StyleSheet , Dimensions} from "react-native";
 import { COLORS } from "../../constants/Colors";
 
@@ -18,7 +18,13 @@ const screenWidth = Dimensions.get("screen").width;
 
 function EmotionsModal(props) {
 
-    const [open,setOpen] = useState(true);
+    const [open,setOpen] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setOpen(true);
+        },100)
+    },[])
 
     const handleToggle = () => {
         setOpen(false);

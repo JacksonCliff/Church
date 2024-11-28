@@ -9,20 +9,20 @@ import {
     Dimensions,
     ScrollView
 } from "react-native";
-import {FontAwesome, FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
+import { FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
 import AppBtn from "../../components/General/AppBtn";
 import FilterList from "../../components/General/FilterList"
 import {data1} from "../../assets/Data/UIData";
 import {COLORS} from "../../constants/Colors";
 import Pulsing from "../../components/Animation/Pulsing";
 import Shaking from "../../components/Animation/Shaking";
-import {getDailyVerse} from "../../API/ThirdPartyApis"
 import { useSelector, useDispatch } from 'react-redux';
 import {updateDailyVerse} from "../../Redux/Slices/HomeSlice";
 import {checkAndUpdateDailyVerse} from '../../LocalStorage/AsyncStorageFns'
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import {Link} from "expo-router";
 import EmotionsModal from "../../components/General/EmotionsModal";
+import ShareBtn from "../../components/General/ShareBtn";
+import CopyBtn from "../../components/General/CopyBtn";
 
 const WIDTH = Dimensions.get("screen").width;
 
@@ -44,7 +44,11 @@ function Index(props) {
                         <View style={{width:"100%",paddingTop:20,flexDirection:"row",justifyContent:"space-between",paddingHorizontal:20}}>
                             <Text style={{color:COLORS.white,fontSize:22}}>Verse of the Day</Text>
                             <Shaking>
-                                <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                                <Link href={'../checkInPage'} asChild>
+                                <TouchableOpacity>
+                                    <MaterialIcons name={"event-available"} size={28} color={COLORS.white}/>
+                                </TouchableOpacity>
+                                </Link>
                             </Shaking>
                         </View>
                         <View style={{justifyContent:"center",alignItems:"center",flex:1}}>
@@ -53,14 +57,9 @@ function Index(props) {
 
                         </View>
                         <View style={{width:"100%",flexDirection:"row",justifyContent:"center",paddingBottom:10}}>
-                            <TouchableOpacity style={styles.glassButton}>
-                                <FontAwesome name={"share"} size={20} color={COLORS.white}/>
-                            </TouchableOpacity>
+                            <ShareBtn/>
                             <View style={{width:80}}/>
-                            <TouchableOpacity style={styles.glassButton}>
-                                <Foundation name={"clipboard-notes"} size={20} color={COLORS.white}/>
-                            </TouchableOpacity>
-
+                            <CopyBtn/>
                         </View>
                         <View style={{height:20,width:"100%"}}/>
                     </ImageBackground>
@@ -143,14 +142,6 @@ const styles = StyleSheet.create({
         borderTopLeftRadius : 20,
         borderTopRightRadius : 20,
         backgroundColor : "rgb(245,245,245)",
-    },
-    glassButton : {
-        borderRadius : 50,
-        justifyContent : "center",
-        alignItems : "center",
-        backgroundColor : "rgba(255,255,255,0.3)",
-        width : 35,
-        height : 35
     },
     sectionC : {
         top : -20

@@ -8,6 +8,10 @@ export default function Layout() {
             <Stack>
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 <Stack.Screen name="prayer" options={{ headerShown: false }} />
+                <Stack.Screen name="checkInPage" options={{ headerShown: false }} />
+                <Stack.Screen name="devotionPage" options={{ headerShown: false }} />
+                <Stack.Screen name="quizIntroPage" options={{ headerShown: false }} />
+                <Stack.Screen name="searchPage" options={{ headerShown: false }} />
             </Stack>
         </Provider>
     );

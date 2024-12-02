@@ -80,39 +80,49 @@ function Index(props) {
                     <View style={{flexDirection:"row",justifyContent:"space-between",margin : 15}}>
 
                         <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
-                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
-                                <FontAwesome5 name={"clipboard-list"} color={COLORS.black} size={30}/>
-                                <Text style={{marginTop:5}}>Quiz</Text>
-                            </View>
+                            <Link href={'../quizIntroPage'} asChild>
+                                <TouchableOpacity style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                    <FontAwesome5 name={"clipboard-list"} color={COLORS.black} size={30}/>
+                                    <Text style={{marginTop:5}}>Quiz</Text>
+                                </TouchableOpacity>
+                            </Link>
                         </View>
 
                         <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
-                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
-                                <FontAwesome5 name={"bible"} color={COLORS.black} size={30}/>
-                                <Text style={{marginTop:5}}>Bible</Text>
-                            </View>
+                            <Link href={'../bible'} asChild>
+                                <TouchableOpacity style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                    <FontAwesome5 name={"bible"} color={COLORS.black} size={30}/>
+                                    <Text style={{marginTop:5}}>Bible</Text>
+                                </TouchableOpacity>
+                            </Link>
                         </View>
 
                         <View style={{backgroundColor:COLORS.white,width:"28%",height: (WIDTH * 25) / 100, borderRadius : 20 }}>
-                            <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
-                                <FontAwesome5 name={"search"} color={COLORS.black} size={30}/>
-                                <Text style={{marginTop:5}}>Search</Text>
-                            </View>
+                            <Link href={'../searchPage'} asChild>
+                                <TouchableOpacity style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+                                    <FontAwesome5 name={"search"} color={COLORS.black} size={30}/>
+                                    <Text style={{marginTop:5}}>Search</Text>
+                                </TouchableOpacity>
+                            </Link>
                         </View>
 
                     </View>
                 </View>
 
                 <View style={styles.sectionC}>
-                    <View style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
-                        <FontAwesome5 name={"praying-hands"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
-                        <Text style={{marginLeft:10,fontSize : 18,fontWeight:"600"}}>Archived Daily Devotionals</Text>
-                    </View>
-                    <View style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
-                        <FontAwesome5 name={"swatchbook"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
-                        <Text style={{marginLeft:15,fontSize : 18,fontWeight:"600"}}>Select Your Reading Plans</Text>
-                    </View>
+                    <Link href={'../devotionPage'} asChild>
+                        <TouchableOpacity style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
+                            <FontAwesome5 name={"praying-hands"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
+                            <Text style={{marginLeft:10,fontSize : 18,fontWeight:"600"}}>Archived Daily Devotionals</Text>
+                        </TouchableOpacity>
+                    </Link>
 
+                    <Link href={'../plans'} asChild>
+                        <TouchableOpacity style={{marginHorizontal:15,marginTop:10,height:90,backgroundColor:COLORS.white,flexDirection:"row",alignItems:"center",padding:15,borderRadius:15}}>
+                            <FontAwesome5 name={"swatchbook"} style={{marginHorizontal:10}} color={COLORS.black} size={25}/>
+                            <Text style={{marginLeft:15,fontSize : 18,fontWeight:"600"}}>Select Your Reading Plans</Text>
+                        </TouchableOpacity>
+                    </Link>
                     <View style={{marginTop : 15}}>
                         <FilterList data={data1} title={"GOD'S WORDS FOR TODAY"}/>
                     </View>

@@ -4,6 +4,9 @@ import {COLORS} from "../constants/Colors";
 import EmotionsModal from "../components/General/EmotionsModal";
 import {MaterialIcons} from "@expo/vector-icons";
 import AppText from "../components/General/AppText";
+import AppBtn from "../components/General/AppBtn";
+import moment from "moment";
+import {getCurrentWeek} from "../Algorithm/Algorithm";
 
 const data = [
     { id: 1, value: "Angry", emote: "😡" },
@@ -18,13 +21,17 @@ const data = [
 ];
 
 function CheckInPage(props) {
+
+    getCurrentWeek(moment().format("DD"))
+
+    console.log(moment().day(),"Check ME <==========")
     return (
         <View style={styles.container}>
             <EmotionsModal/>
             <View style={styles.mainContent}>
                 <MaterialIcons name={"arrow-back-ios"} size={28} color={COLORS.dark08}/>
 
-                <View style={{flex:1,flexDirection : "row",backgroundColor:"black",alignItems : "flex-end"}}>
+                <View style={{flex:1,flexDirection : "row",alignItems : "flex-end"}}>
                     <View style={{flex:2}}>
                         <AppText color={"white"} className={"large"}>
                             You have completed your 6 check-in!
@@ -34,10 +41,10 @@ function CheckInPage(props) {
                         </AppText>
                     </View>
                     <View style={styles.btnContainer}>
-                        <TouchableOpacity style={{backgroundColor:COLORS.light06,borderTopLeftRadius : 25,borderBottomLeftRadius : 25,width : 50,height : 40,justifyContent:"center",alignItems: "center"}}>
+                        <TouchableOpacity style={{backgroundColor:COLORS.light02,borderTopLeftRadius : 25,borderBottomLeftRadius : 25,width : 50,height : 40,justifyContent:"center",alignItems: "center"}}>
                             <MaterialIcons name={"arrow-back-ios"} size={20} color={COLORS.white}/>
                         </TouchableOpacity>
-                        <TouchableOpacity style={{backgroundColor:COLORS.light06,borderTopRightRadius : 25,borderBottomRightRadius : 25,width : 50,height : 40,justifyContent:"center",alignItems: "center"}}>
+                        <TouchableOpacity style={{backgroundColor:COLORS.light02,borderTopRightRadius : 25,borderBottomRightRadius : 25,width : 50,height : 40,justifyContent:"center",alignItems: "center"}}>
                             <MaterialIcons name={"arrow-forward-ios"} size={20} color={COLORS.white}/>
                         </TouchableOpacity>
                     </View>
@@ -46,7 +53,7 @@ function CheckInPage(props) {
                 <View style={{flex : 4}}>
 
                     {/* Day section */}
-                    <View style={{flex:1,backgroundColor:"black",paddingTop:10,flexDirection:"row"}}>
+                    <View style={{flex:1,paddingTop:10,flexDirection:"row"}}>
                         {
                             [1,2,3,4,5,6,7].map(item => (
                                 <View key={item} style={{flex:1,margin:10,alignItems:"center"}}>
@@ -63,13 +70,20 @@ function CheckInPage(props) {
                     </View>
 
                     {/* Mood section */}
-                    <View style={{flex:1,backgroundColor:"green"}}>
+                    <View style={{flex:1,borderRadius : 10,justifyContent: "center", alignItems: 'center',backgroundColor : COLORS.dark08}}>
+                        <View style={{marginVertical:15}}>
+                            <AppText className={"large"}>😡</AppText>
+                        </View>
+                        <AppText color={"white"} className={"medium"}>Your mood on this day is</AppText>
 
                     </View>
 
                     {/* Btn section */}
-                    <View style={{flex:2,backgroundColor:"blue"}}>
-
+                    <View style={{flex:2}}>
+                        <View style={{marginVertical : 10}}>
+                            <AppBtn color={COLORS.btnPrimary}/>
+                        </View>
+                        <AppBtn color={COLORS.btnPrimary}/>
                     </View>
                 </View>
             </View>
@@ -88,7 +102,7 @@ const styles = StyleSheet.create({
     mainContent : {
         paddingTop : StatusBar.currentHeight,
         padding : 10,
-        backgroundColor : "cyan",
+        backgroundColor : COLORS.gray,
         flex : 1
     },
     btnContainer : {

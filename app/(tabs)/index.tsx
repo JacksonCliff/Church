@@ -9,7 +9,7 @@ import {
     Dimensions,
     ScrollView
 } from "react-native";
-import { FontAwesome5, Foundation, MaterialIcons} from "@expo/vector-icons";
+import { FontAwesome5, MaterialIcons} from "@expo/vector-icons";
 import AppBtn from "../../components/General/AppBtn";
 import FilterList from "../../components/General/FilterList"
 import {data1} from "../../assets/Data/UIData";
